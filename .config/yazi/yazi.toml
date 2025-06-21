@@ -120,6 +120,8 @@ preloaders = [
 ]
 previewers = [
 	{ name = "*/", run = "folder" },
+  #markdown
+  { name = "*.md", run = "rich-preview" }, # for markdown (.md) files
 	# Code
 	{ mime = "text/*", run = "code" },
 	{ mime = "application/{mbox,javascript,wine-extension-ini}", run = "code" },
