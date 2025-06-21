@@ -1,0 +1,38 @@
+let g:mapleader = "\<Space>"
+
+
+" remove empty lines
+map <leader>i :g/^\s*$/d<CR>
+map <leader>w :w<CR>
+inoremap jj <esc>
+set noswapfile
+" set sneak
+" set clipboard^=ideaput
+set clipboard=unnamedplus
+" set clipboard+=unnamed
+" nmap b S
+nmap s <Action>(flash.search)
+
+set relativenumber
+nnoremap [n :set relativenumber!<CR>
+nnoremap <S-l> :action NextTab<CR>
+nnoremap <S-h> :action PreviousTab<CR>
+nnoremap <Leader>l :action MoveEditorToOppositeTabGroup<CR>
+
+nnoremap gcc :action CommentByLineComment<CR>
+vnoremap gc :<bs><bs><bs><bs><bs>action VimVisualSwapSelections<cr>:action CommentByLineComment<CR>gv
+nnoremap gcap vap:<bs><bs><bs><bs><bs>action VimVisualSwapSelections<cr>:action CommentByLineComment<CR>gv
+
+"" li
+"let @l='I<li>jjA</li>jjj'
+""p
+"let @p='I<p>jjA</p>jj^llll'
+"" px to rem
+"let @r='^f:fpvlcremjjF lvfrh"xyvfrhc=@x/10.0'
+"" console log in scss
+"let @v='^f lvf hyoconoskbkbsole.log();jjhhpa, "jjp'
+"" line-height
+"let @h='k^f:llvfphyj$Fpi.0/jjlvf;hpF lvf;hc="F lllllvf;hx' 
+"" echo remove php
+"let @e="/<?php echovf>x"
+set clipboard^=ideaput
