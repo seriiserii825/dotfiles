@@ -1,0 +1,16 @@
+source ~/xubuntu/zsh_aliases/dc/zsh-dc-composer
+source ~/xubuntu/zsh_aliases/dc/zsh-dc-artisan
+source ~/xubuntu/zsh_aliases/dc/zsh-dc-controller
+source ~/xubuntu/zsh_aliases/dc/zsh-dc-model
+source ~/xubuntu/zsh_aliases/dc/zsh-dc-request
+source ~/xubuntu/zsh_aliases/dc/zsh-dc-observer
+source ~/xubuntu/zsh_aliases/dc/zsh-dc-jobs
+source ~/xubuntu/zsh_aliases/dc/zsh-dc-node
+source ~/xubuntu/zsh_aliases/dc/zsh-dc-docker
+source ~/xubuntu/zsh_aliases/dc/zsh-dc-migration
+source ~/xubuntu/zsh_aliases/dc/zsh-dc-seeder
+source ~/xubuntu/zsh_aliases/dc/zsh-dc-tinker
+source ~/xubuntu/zsh_aliases/dc/zsh-dc-ide
+source ~/xubuntu/zsh_aliases/dc/zsh-dc-perms
+source ~/xubuntu/zsh_aliases/dc/zsh-dc-command
+source ~/xubuntu/zsh_aliases/dc/zsh-dc-test

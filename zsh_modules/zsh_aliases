@@ -1,0 +1,74 @@
+alias q="exit"
+alias clear_downloads="rm -rf ~/Downloads/* && rm -rf ~/Downloads/.*"
+# alias v="vifm ."
+alias hpr="nvim ~/.config/hypr/hypr.conf"
+alias wbr="nvim ~/.config/waybar/config"
+alias jpegtojpg="rnst * && rename -v s/jpeg/jpg/g *"
+alias g="gulp"
+alias r="ranger"
+alias rconf="nvim ~/.config/ranger/rc.conf"
+alias lz="lazygit"
+alias sns="sudo systemctl stop nginx"
+alias search_emojji="google-chrome-stable https://search-emoji-pi.vercel.app/ru#Symbols &"
+
+alias gs='git status'
+# function yy() {
+# 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+# 	yazi "$@" --cwd-file="$tmp"
+# 	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+# 		cd -- "$cwd"
+# 	fi
+# 	rm -f -- "$tmp"
+# }
+
+alias rp="venv/bin/python3 -m main"
+
+alias gcp="git config pull.rebase false && git pull"
+alias rmn='rm -rf node_modules'
+alias rmnl='rm -rf node_modules package-lock.json yarn.lock pnpm-lock.yaml && rm bun.lock'
+alias ms='mgitstatus -e -d 4'
+alias msf='mgitstatus -f -e -d 4'
+alias msignore='git config --local mgitstatus.ignore true'
+alias i3conf="nvim ~/.config/i3/config"
+alias gth="xdg-open 'https://github.com/seriiserii825?tab=repositories'"
+alias pacman_to_file='pacman -Qent > pkglist.txt'
+
+alias gL='cd "/home/serii/Local Sites"'
+alias gc='cd ~/.config'
+alias dg='sudo dpkg -i'
+# alias shn="sudo shutdown -h now"
+alias srn="sudo shutdown -r now"
+alias zs="nvim ~/.zshrc"
+alias sz="source ~/.zshrc"
+# alias wp="docker-compose run --rm"
+alias wp="docker-compose run --rm wpcli"
+
+# alias ll='lsd -lah'
+# alias lt='lsd --tree -d'
+alias ll='exa -lah'
+alias lm='exa -la -s=modified'
+alias lh='exa -la -s=size'
+alias l='exa -lhF' 
+alias lt='exa -T --level=2' 
+alias lta='exa -T' 
+alias lt3='exa -T --level=3' 
+alias lt4='exa -T --level=4' 
+alias lt5='exa -T --level=5' 
+alias ex='exec ~/Documents/bash/bash-scripts/exit.sh'
+# alias mjml='./node_modules/.bin/mjml --watch index.mjml -o index.html'
+kill_server(){
+  screen -S $1 -X quit
+}
+
+function gremote ()
+{
+    local remote=`git remote -v | head -n 1`
+    if [[ $remote =~ 'https' ]];
+    then
+        local repoUrl=`echo $remote | awk -F " " '{print $2}' | sed 's/\\.git//g'`
+    else
+        local repoUrl=`echo $remote | awk -F "@" '{print $2}' | awk -F " " '{print $1}' | sed 's/:/\\//g' | sed 's/.git//g' | awk '{print "https://"$1}'`
+    fi
+    echo "Opening $repoUrl"
+    xdg-open $repoUrl
+}

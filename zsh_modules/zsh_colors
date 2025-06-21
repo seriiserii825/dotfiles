@@ -1,0 +1,44 @@
+export tpfn=$'\e[0m' # normal
+export tpfb=$(tput bold)
+export treset=$(tput sgr0)
+
+export tpf0=$(tput setaf 0) # black
+export tpf1=$(tput setaf 1) # red
+export tpf2=$(tput setaf 2) # green
+export tpf3=$(tput setaf 3) # yellow
+export tpf4=$(tput setaf 4) # blue
+export tpf5=$(tput setaf 5) # magenta
+export tpf6=$(tput setaf 6) # cyan
+export tpf7=$(tput setaf 7) # white
+
+
+export tpb0=$(tput setab 0) # black
+export tpb1=$(tput setab 1) # red
+export tpb2=$(tput setab 2) # green
+export tpb3=$(tput setab 3) # yellow
+export tpb4=$(tput setab 4) # blue
+export tpb5=$(tput setab 5) # magenta
+export tpb6=$(tput setab 6) # cyan
+export tpb7=$(tput setab 7) # white
+# echo "${tpf0}black ${tpf1}red ${tpf2}green ${tpf3}yellow ${tpf4}blue ${tpf5}magenta ${tpf6}cyan ${tpf7}white${tpfn}"
+
+## bold colours
+export tblack="$tpfb$tpf0" # black
+export tred="$tpfb$tpf1" # red
+export tgreen="$tpfb$tpf2" # green
+export tyellow="$tpfb$tpf3" # yellow
+export tblue="$tpfb$tpf4" # blue
+export tmagenta="$tpfb$tpf5" # magenta
+export tcyan="$tpfb$tpf6" # cyan
+export twhite="$tpfb$tpf7" # white
+
+
+export tblackb="$tpb0" # black
+export tredb="$tpb1" # red
+export tgreenb="$tpb2" # green
+export tyellowb="$tpb3" # yellow
+export tblueb="$tpb4" # blue
+export tmagentab="$tpb5" # magenta
+export tcyanb="$tpb6" # cyan
+export twhiteb="$tpb7" # white
+

@@ -1,0 +1,9 @@
+alias mg='mogrify -format jpg *.png'
+alias mgjpg='mogrify -format jpg *.png && rm *.png && jpegoptim --strip-all --all-progressive -ptm 80 *.jpg'
+alias jall='jpegoptim --strip-all --all-progressive -ptm 80 *.jpg'
+
+JPGTOjpg() {
+  for I in *.JPG; 
+  do mv "$I" `echo "$I" | sed "s/JPG/jpg/g"`;done
+  echo "All JPG files have been converted to jpg."
+}

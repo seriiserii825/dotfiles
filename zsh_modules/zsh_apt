@@ -1,0 +1,8 @@
+alias Install="sudo apt install -y"
+alias Update='sudo apt update -y'
+alias Upgrade='sudo apt upgrade -y'
+alias Search='apt-cache search'
+alias Autoremove='sudo apt autoremove -y'
+alias Autoclean='sudo apt autoclean -y'
+alias Purge='sudo apt purge -y'
+alias Search='sudo apt search'

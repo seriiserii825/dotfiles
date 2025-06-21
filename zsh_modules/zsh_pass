@@ -1,0 +1,7 @@
+function psync (){
+  current_path=$(pwd)
+  cd ~/.password-store
+  git pull
+  git push
+  cd $current_path
+}

@@ -1,0 +1,6 @@
+dunstHistory(){
+  for i in $(seq 1 $1); do
+    dunstctl history-pop
+  done
+}
+alias dunst_close_all='dunstctl close-all'

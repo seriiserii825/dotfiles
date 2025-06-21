@@ -1,0 +1,5 @@
+alias umnt='sudo umount /mnt'
+
+function mnt(){
+  sudo mount /dev/$1 /mnt
+}

@@ -1,0 +1,6 @@
+alias getp='pwd | xclip -sel clip'
+alias fc='xclip -selection clipboard'
+
+function clip(){
+  xclip -sel clip < $1
+}

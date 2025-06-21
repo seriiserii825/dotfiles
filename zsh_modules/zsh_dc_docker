@@ -1,0 +1,19 @@
+alias dcstart="sudo systemctl start docker"
+alias dcstop="sudo systemctl stop docker"
+
+alias dcup="sudo systemctl start docker && sleep 2 && sudo docker-compose up -d && docker ps"
+alias dcupc="sudo systemctl start docker && sleep 2 && sudo docker-compose up && docker ps"
+alias dcbuild="sudo docker-compose up --build -d"
+alias dcrebuild="sudo docker-compose down && sudo docker-compose up --build -d"
+alias dcclear="sudo docker-compose up"
+alias dcrestart="sudo docker-compose down && sudo docker-compose up -d && docker ps"
+alias dcdown="sudo docker-compose down  --remove-orphans"
+alias dcps="sudo docker-compose ps"
+alias dclist="docker ps -a"
+
+function updateContainer(){
+docker-compose stop $1 # stop if running
+docker-compose rm -f $1 # remove without confirmation
+docker-compose build $1 # build
+docker-compose up -d $1 # create and start in background
+}

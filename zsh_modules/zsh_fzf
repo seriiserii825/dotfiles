@@ -1,0 +1,16 @@
+#pi export FZF_DEFAULT_COMMAND="find . -path '*/\.*' -type d -prune -o -type f -print -o -type l -print 2> /dev/null | sed s/^..//" 
+export FZF_DEFAULT_COMMAND="rg --files --follow --no-ignore-vcs --hidden \
+  -g '!**/node_modules/*' \
+  -g '!**/.git/*' \
+  -g '!**/venv/*' \
+  -g '!**/autoload/*' \
+  -g '!**/__pycache__/*' \
+  -g '!**/assets/fonts/*' \
+  -g '!**/assets/libs/*' \
+  -g '!**/vendor/*' \
+  -g '!**/storage/*' \
+  -g '!**/docker/mysql/*' \
+  -g '!**/dist/*' \
+  -g '!**/.mypy_cache/*' \
+  -g '!**/.angular/*'"
+alias f='nvim -o `fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"`'

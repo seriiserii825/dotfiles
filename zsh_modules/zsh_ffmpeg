@@ -1,0 +1,12 @@
+function ts_to_mp4(){
+ ffmpeg -i $1 -c:v copy -c:a aac $2.mp4
+}
+function video_resize(){
+  ffmpeg -i $1 -vcodec libx264 -crf $2 $3
+}
+
+function mp4_to_mp3(){
+ffmpeg -i $1.mp4 -vn \
+       -acodec libmp3lame -ac 2 -ab 160k -ar 48000 \
+        $1.mp3 \
+}

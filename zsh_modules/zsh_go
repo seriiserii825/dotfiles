@@ -1,0 +1,12 @@
+alias gx="cd ~/xubuntu"
+alias gkb='cd ~/Documents/Knowledge-base_'
+alias gD='cd ~/Documents'
+alias gF='cd ~/Documents/my-fonts'
+alias gdwn='cd ~/Downloads'
+alias gW='cd ~/Sites/wp-projects'
+alias gt='cd ~/.password-store'
+alias gS='cd ~/Sites'
+alias gb="cd ~/Documents/bash"
+alias zn="cd ~/.config/nvim"
+alias yc="nvim ~/.config/yazi/yazi.toml"
+alias ym="nvim ~/.config/yazi/keymap.toml"

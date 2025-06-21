@@ -25,24 +25,24 @@ export PATH;
 # change node vesion when run yarn or bun
 source ~/Documents/bash/bash-scripts/n.sh
 # docker
-source ~/xubuntu/scripts/docker.sh
+source ~/dotfiles/scripts/docker.sh
 
 plugins=(z npm zsh-autosuggestions zsh-syntax-highlighting you-should-use copybuffer sudo colored-man-pages vi-mode extract)
 
 set ZSH_HIGHLIGHT_MAXLENGTH=100
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-source ~/xubuntu/zsh_modules/zsh_colors
-source ~/xubuntu/zsh_modules/zsh_aliases
-source ~/xubuntu/zsh_modules/zsh_python
-source ~/xubuntu/zsh_modules/zsh_node
-source ~/xubuntu/zsh_modules/zsh_go
-source ~/xubuntu/zsh_modules/zsh_xclip
-source ~/xubuntu/zsh_modules/zsh_fzf
-source ~/xubuntu/zsh_modules/zsh_ffmpeg
-source ~/xubuntu/zsh_modules/zsh_mount
-source ~/xubuntu/zsh_modules/zsh_mogrify
-source ~/xubuntu/zsh_modules/zsh_dc_docker
+source ~/dotfiles/zsh_modules/zsh_colors
+source ~/dotfiles/zsh_modules/zsh_aliases
+source ~/dotfiles/zsh_modules/zsh_python
+source ~/dotfiles/zsh_modules/zsh_node
+source ~/dotfiles/zsh_modules/zsh_go
+source ~/dotfiles/zsh_modules/zsh_xclip
+source ~/dotfiles/zsh_modules/zsh_fzf
+source ~/dotfiles/zsh_modules/zsh_ffmpeg
+source ~/dotfiles/zsh_modules/zsh_mount
+source ~/dotfiles/zsh_modules/zsh_mogrify
+source ~/dotfiles/zsh_modules/zsh_dc_docker
 
 
 source $ZSH/oh-my-zsh.sh

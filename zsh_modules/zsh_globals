@@ -1,0 +1,9 @@
+function wpImport(){
+  wp acf clean
+  wp acf import --all
+}
+
+function wpExport(){
+  rm -rf acf
+  wp acf export --all
+}
