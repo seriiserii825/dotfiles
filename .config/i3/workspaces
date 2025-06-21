@@ -1,0 +1,36 @@
+default_orientation horizontal
+# default_orientation vertical
+workspace_layout default
+
+workspace 1 output VGA-1 
+workspace 7 output VGA-1
+workspace 2 output DVI-D-1 
+workspace 4 output DVI-D-1
+workspace 6 output DVI-D-1
+
+#startup
+assign [class="figma-linux" instance="figma-linux"] 1
+assign [class="jetbrains-phpstorm"] 2
+assign [class="teams-for-linux" instance="teams-for-linux"] 4
+assign [class="Local" instance="local"] 6
+assign [class="TelegramDesktop" instance="telegram-desktop"] → 7
+# assign [class="qBittorrent" instance="qbittorrent"] 9
+assign [class="Audacious" instance="audacious"] 9
+assign [class="Gimp" instance="gimp"] 10
+# assign [class="qBittorrent" instance="qbittorrent"] 10
+assign [class="qBittorrent"] 10
+
+for_window [class="teams-for-linux" instance="teams-for-linux"] focus
+for_window [class="jetbrains-phpstorm"] focus
+for_window [class="firefox"] focus
+# "Navigator", "firefw wx"
+for_window [class="Local" instance="local"] focus
+for_window [class="TelegramDesktop" instance="telegram-desktop"] focus
+for_window [class="Gimp" instance="gimp"] focus
+for_window [class="Google-chrome" instance="google-chrome"] focus
+for_window [title="Gpick"] floating enable, resize set 800px 500px
+for_window [class="st-256color" instance="st-256color"] floating enable, resize set 400px 300px
+for_window [class="Tk"] floating enable, resize set 800 800
+for_window [window_role="GtkFileChooserDialog" title="Save File" class="Google-chrome"] floating enable, resize set 900 800, move position center
+for_window [window_role="gimp-keyboard-shortcuts-dialog" class="Gimp"] floating enable, resize set 900 800, move position center
+# for_window [class="smplayer"] floating toggle, move container to workspace 7, sticky toggle, resize set 600 500, move position 10 800 

@@ -1,0 +1,63 @@
+#keyboard
+exec_always setxkbmap -option grp:caps_toggle "us,ru" -option grp:led_caps
+bindsym $mod+Shift+i exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh
+bindsym $mod+q kill
+bindsym $mod+d exec --no-startup-id rofi -show drun -theme $HOME/xubuntu/rofi-collection/nord/nord.rasi
+bindsym $mod+Return exec alacritty
+# bindsym $mod+Return exec /usr/bin/warp-terminal
+bindsym $mod+Ctrl+2 resize shrink width 20 px or 20 ppt
+# bindsym $mod+Shift+q [workspace=.*] kill
+bindsym $mod+Shift+q exec ~/Documents/bash/bash-scripts/i3-close-windows.sh
+bindsym $mod+g exec google-chrome-stable
+bindsym $mod+v exec vivaldi-stable
+bindsym $mod+t exec telegram-desktop
+bindsym $mod+w exec local-by-flywheel
+bindsym $mod+shift+y exec flameshot gui
+bindsym $mod+y exec --no-startup-id maim --select | xclip -selection clipboard -t image/jpg | sleep 1 && notify-send 'Screenshot copied to clipboard'
+bindsym $mod+ctrl+y exec --no-startup-id maim --select > ~/Downloads/screenshot.jpg
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+# bindsym $mod+t exec st 
+# bindsym $mod+t exec ~/Documents/bash/bash-scripts/nvim_to_clipboard.sh
+
+bindsym $mod+e exec --no-startup-id rofimoji --skin-tone light --action clipboard 
+
+# Seek Telegram video backward (5 sec)
+bindsym $mod+Shift+Left exec xdotool click 1 && xdotool mousemove_relative -- -30 0 && xdotool click 1
+
+# Seek Telegram video forward (5 sec)
+bindsym $mod+Shift+Right exec xdotool click 1 && xdotool mousemove_relative -- 30 0 && xdotool click 1
+
+# Use pactl to adjust volume in PulseAudio.
+set $refresh_i3status killall -SIGUSR1 i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+# bindsym $mod+F11 exec pactl -- set-sink-volume 0 -10%
+# bindsym $mod+F12 exec pactl -- set-sink-volume 0 +10%
+
+# change focus
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
+
+# move focused window
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s        			    sticky toggle;
+bindsym $mod+Shift+s			      split toggle
+# bindsym $mod+w layout tabbed
+# bindsym $mod+e layout toggle split
+
+bindsym $mod+r mode "resize"

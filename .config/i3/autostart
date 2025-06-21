@@ -1,0 +1,19 @@
+# autostart
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec nitrogen --restore
+exec_always --no-startup-id /usr/bin/copyq;
+exec_always --no-startup-id /usr/bin/teams-for-linux;
+# exec_always --no-startup-id /opt/teams-for-linux/teams-for-linux
+# exec_always --no-startup-id /usr/bin/skypeforlinux;
+# exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
+# exec --no-startup-id /usr/bin/guake
+
+# exec_always --no-startup-id lxpolkit
+exec_always /usr/bin/telegram-desktop
+
+#applets
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id nm-applet
+exec blueman-mananger
