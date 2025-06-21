@@ -1,5 +1,13 @@
 README.md
 .git
-.gitconfig
 zsh_modules
 scripts
+gimp
+phpstorm
+rofi-collection
+.eslintrc.json
+.p10k.zsh
+.prettierrc
+.vimrc
+dunstrc
+smplayer.keys

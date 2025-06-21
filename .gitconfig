@@ -1,0 +1,21 @@
+[user]
+  email = seriiburduja@gmail.com
+  name = serii burduja
+
+[pull]
+  rebase = false
+
+[core]
+  editor = true
+  # autocrlf = true
+	fileMode = false
+	symlinks = false
+
+[safe]
+	directory = /home/serii/Downloads/my-wordpress/wp-content/themes/bs-servizi-express-casa-24h
+	directory = /home/serii/Downloads/my-wordpress
+	directory = /home/serii/Downloads/test
+	directory = /home/serii/Downloads/wp-palazeti
+	directory = /home/serii/Documents/docker/wp-regio-calor/wp-content/themes/lm-reggio-calor
+	directory = /home/serii/Documents/docker/lc-reggiocalor
+	directory = /home/serii/Documents/docker/docker-wp
