@@ -32,19 +32,6 @@ plugins=(z npm zsh-autosuggestions zsh-syntax-highlighting you-should-use copybu
 set ZSH_HIGHLIGHT_MAXLENGTH=100
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-source ~/dotfiles/zsh_modules/zsh_colors
-source ~/dotfiles/zsh_modules/zsh_aliases
-source ~/dotfiles/zsh_modules/zsh_python
-source ~/dotfiles/zsh_modules/zsh_node
-source ~/dotfiles/zsh_modules/zsh_go
-source ~/dotfiles/zsh_modules/zsh_xclip
-source ~/dotfiles/zsh_modules/zsh_fzf
-source ~/dotfiles/zsh_modules/zsh_ffmpeg
-source ~/dotfiles/zsh_modules/zsh_mount
-source ~/dotfiles/zsh_modules/zsh_mogrify
-source ~/dotfiles/zsh_modules/zsh_dc_docker
-
-
 source $ZSH/oh-my-zsh.sh
 
 export NVM_DIR="/home/serii/.config/nvm"
@@ -86,3 +73,17 @@ function y() {
 
 # zoxide - smart cd
 eval "$(zoxide init zsh)"
+
+source ~/dotfiles/zsh_modules/zsh_colors
+source ~/dotfiles/zsh_modules/zsh_aliases
+source ~/dotfiles/zsh_modules/zsh_python
+source ~/dotfiles/zsh_modules/zsh_node
+source ~/dotfiles/zsh_modules/zsh_go
+source ~/dotfiles/zsh_modules/zsh_xclip
+source ~/dotfiles/zsh_modules/zsh_fzf
+source ~/dotfiles/zsh_modules/zsh_ffmpeg
+source ~/dotfiles/zsh_modules/zsh_mount
+source ~/dotfiles/zsh_modules/zsh_mogrify
+source ~/dotfiles/zsh_modules/zsh_dc_docker
+
+
