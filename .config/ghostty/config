@@ -26,6 +26,8 @@ shell-integration = zsh
 theme = catppuccin-frappe
 font-family = FiraCodeNerdFontMono
 font-size = 10
+copy-on-select = true
+background = #222222
 # window-padding-x = 2
 #
 # # Spacing around the equals sign does not matter.
@@ -38,7 +40,6 @@ font-size = 10
 # # Any line beginning with a # is a comment. It's not possible to put
 # # a comment after a config option, since it would be interpreted as a
 # # part of the value. For example, this will have a value of "#123abc":
-background = #222222
 #
 # # Empty values are used to reset config keys to default.
 # key =
