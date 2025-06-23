@@ -28,6 +28,7 @@ font-family = FiraCodeNerdFontMono
 font-size = 10
 copy-on-select = clipboard
 background = #222222
+
 # window-padding-x = 2
 #
 # # Spacing around the equals sign does not matter.
