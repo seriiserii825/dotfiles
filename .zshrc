@@ -1,4 +1,4 @@
-eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/base.toml)"
+eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/base.yml)"
 
 # if find files that not exist, then don't show error
 setopt NULL_GLOB
