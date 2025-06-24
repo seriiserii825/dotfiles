@@ -11,3 +11,5 @@ rofi-collection
 .vimrc
 dunstrc
 smplayer.keys
+.gitconfig
+.gitignore
