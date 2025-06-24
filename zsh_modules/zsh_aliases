@@ -24,6 +24,7 @@ alias gs='git status'
 alias rp="venv/bin/python3 -m main"
 
 alias gcp="git config pull.rebase false && git pull"
+alias gph="git push"
 alias rmn='rm -rf node_modules'
 alias rmnl='rm -rf node_modules package-lock.json yarn.lock pnpm-lock.yaml && rm bun.lock'
 alias ms='mgitstatus -e -d 4'

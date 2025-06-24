@@ -20,6 +20,7 @@
 # https://bazaar.canonical.com/
 --ignore-directory=is:.bzr
 --ignore-directory=is:Chrome
+--ignore-directory=is:uv.lock
 
 # Codeville
 # http://freshmeat.sourceforge.net/projects/codeville
