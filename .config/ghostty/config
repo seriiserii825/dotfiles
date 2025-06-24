@@ -24,10 +24,11 @@ window-padding-x=0
 window-padding-y=0
 shell-integration = zsh
 theme = catppuccin-frappe
-font-family = FiraCodeNerdFontMono
-font-size = 10
+font-family = "JetBrainsMono Nerd Font"
+font-size = 11
 copy-on-select = clipboard
 background = #222222
+clipboard-paste-protection = false
 
 # window-padding-x = 2
 #
