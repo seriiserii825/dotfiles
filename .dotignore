@@ -13,3 +13,4 @@ dunstrc
 smplayer.keys
 .gitconfig
 .gitignore
+.dotignore
