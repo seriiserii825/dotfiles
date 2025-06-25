@@ -14,3 +14,4 @@ smplayer.keys
 .gitconfig
 .gitignore
 .dotignore
+antigen.sh
