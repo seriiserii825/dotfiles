@@ -16,7 +16,11 @@ export PATH=~/Documents/bash/bash-wp:$PATH
 export PATH=~/Documents/bash-arch:$PATH
 export PATH=~/Documents/bash:$PATH
 export ZSH="/home/serii/.oh-my-zsh"
+
+plugins=(copybuffer dirhistory)
+source $ZSH/oh-my-zsh.sh
 export PATH;
+
 
 # change node vesion when run yarn or bun
 source ~/Documents/bash/bash-scripts/n.sh
@@ -98,6 +102,8 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 zinit light zdharma-continuum/fast-syntax-highlighting
+
+# zinit snippet https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/sudo/sudo.plugin.zsh
 
 ### End of Zinit's installer chunk
 
