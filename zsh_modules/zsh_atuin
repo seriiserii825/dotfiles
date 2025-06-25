@@ -1,0 +1,3 @@
+# atuin - history management
+. "$HOME/.atuin/bin/env"
+eval "$(atuin init zsh)"

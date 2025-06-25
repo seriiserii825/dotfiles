@@ -1,0 +1,10 @@
+export ZSH="/home/serii/.oh-my-zsh"
+ZSH_THEME="bira"
+source $ZSH/oh-my-zsh.sh
+
+plugins=(copybuffer dirhistory)
+
+# autocomplete for zsh shell with tab
+autoload -U compinit; compinit
+zstyle ':completion:*' menu select
+
