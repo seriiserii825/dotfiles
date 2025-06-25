@@ -38,5 +38,8 @@ use = "yazi-rs/plugins:vcs-files"
 rev = "3d1efb7"
 hash = "a25fa4416b4135e51bb163ac5a45df66"
 
-[flavor]
-deps = []
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "d04a298"
+hash = "288a0dedd5d13b28605cf82c05326dcd"
+
