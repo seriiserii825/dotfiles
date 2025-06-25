@@ -87,7 +87,7 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 
 # Load the theme.
-antigen theme robbyrussell
+antigen theme bira
 
 # Tell Antigen that you're done.
 antigen apply
