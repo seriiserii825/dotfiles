@@ -2,7 +2,7 @@ export ZSH="/home/serii/.oh-my-zsh"
 ZSH_THEME="bira"
 source $ZSH/oh-my-zsh.sh
 
-plugins=(copybuffer dirhistory zsh-syntax-highlighting zsh-autosuggestions F-Sy-H sudo vi-mode)
+plugins=(dirhistory zsh-syntax-highlighting zsh-autosuggestions F-Sy-H sudo vi-mode)
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
