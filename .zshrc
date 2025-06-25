@@ -1,5 +1,3 @@
-eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/base.yml)"
-
 # if find files that not exist, then don't show error
 setopt NULL_GLOB
 # in terminal use vi mode, ctrl+[
@@ -89,7 +87,7 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 
 # Load the theme.
-# antigen theme robbyrussell
+antigen theme robbyrussell
 
 # Tell Antigen that you're done.
 antigen apply
@@ -137,3 +135,4 @@ antigen apply
 # setopt hist_verify # verify command before executing
 #
 #
+ZSH_THEME="fishy"
