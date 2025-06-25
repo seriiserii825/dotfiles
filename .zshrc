@@ -16,17 +16,3 @@ source ~/dotfiles/zsh_modules/zsh_ffmpeg
 source ~/dotfiles/zsh_modules/zsh_mount
 source ~/dotfiles/zsh_modules/zsh_mogrify
 source ~/dotfiles/zsh_modules/zsh_dc_docker
-
-# zinit light zsh-users/zsh-syntax-highlighting
-# zinit light zsh-users/zsh-completions
-# zinit light zsh-users/zsh-autosuggestions
-# zinit light Aloxaf/fzf-tab
-# zinit light zdharma-continuum/fast-syntax-highlighting
-#
-# # zinit snippet https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/sudo/sudo.plugin.zsh
-
-# if find files that not exist, then don't show error
-setopt NULL_GLOB
-# in terminal use vi mode, ctrl+[
-set -o vi
-
