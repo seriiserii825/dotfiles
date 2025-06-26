@@ -10,12 +10,12 @@ plugins=(
   zsh-autosuggestions
   vi-mode
   archlinux
-  alias-finder
   z
   zsh-interactive-cd
   themes
   fzf
   git-open
+  you-should-use
 )
 
 source "$ZSH/oh-my-zsh.sh"
