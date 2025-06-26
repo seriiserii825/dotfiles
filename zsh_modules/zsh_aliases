@@ -28,7 +28,7 @@ alias rp="venv/bin/python3 -m main"
 
 alias gcp="git config pull.rebase false && git pull"
 alias gph="git push"
-alias rmn='rm -rf node_modules'
+alias rmn='rm -rf node_modules && rm -rf vendor'
 alias rmnl='rm -rf node_modules package-lock.json yarn.lock pnpm-lock.yaml && rm bun.lock'
 alias ms='mgitstatus -e -d 4'
 alias msf='mgitstatus -f -e -d 4'
