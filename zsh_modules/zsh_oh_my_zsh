@@ -9,7 +9,6 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   vi-mode
-  archlinux
   z
   zsh-interactive-cd
   themes
