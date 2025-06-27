@@ -1,4 +1,4 @@
-alias gx="cd ~/xubuntu"
+alias gd="cd ~/dotfiles"
 alias gkb='cd ~/Documents/Knowledge-base_'
 alias gD='cd ~/Documents'
 alias gF='cd ~/Documents/my-fonts'

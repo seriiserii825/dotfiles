@@ -1,7 +1,6 @@
 source ~/dotfiles/zsh_modules/zsh_bash_scripts
 source ~/dotfiles/zsh_modules/zsh_nvm
 source ~/dotfiles/zsh_modules/zsh_default_editor
-source ~/dotfiles/zsh_modules/zsh_atuin
 source ~/dotfiles/zsh_modules/zsh_yazi
 source ~/dotfiles/zsh_modules/zsh_zoxide
 source ~/dotfiles/zsh_modules/zsh_colors
@@ -16,3 +15,4 @@ source ~/dotfiles/zsh_modules/zsh_mount
 source ~/dotfiles/zsh_modules/zsh_mogrify
 source ~/dotfiles/zsh_modules/zsh_dc_docker
 source ~/dotfiles/zsh_modules/zsh_oh_my_zsh
+source ~/dotfiles/zsh_modules/zsh_atuin

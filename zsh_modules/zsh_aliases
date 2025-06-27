@@ -42,8 +42,8 @@ alias gc='cd ~/.config'
 alias dg='sudo dpkg -i'
 # alias shn="sudo shutdown -h now"
 alias srn="sudo shutdown -r now"
-alias zs="nvim ~/.zshrc"
-alias sz="source ~/.zshrc"
+alias zs="nvim ~/dotfiles/.zshrc"
+alias sz="source ~/dotfiles/.zshrc"
 # alias wp="docker-compose run --rm"
 alias wp="docker-compose run --rm wpcli"
 
