@@ -19,11 +19,6 @@ rev = "22b6fb5"
 hash = "98cdb2e889b73c4d4a8945f166486605"
 
 [[plugin.deps]]
-use = "ndtoan96/ouch"
-rev = "1ee69a5"
-hash = "63679f3daf8551ff8755be38b5ced0f"
-
-[[plugin.deps]]
 use = "yazi-rs/plugins:piper"
 rev = "3d1efb7"
 hash = "5c7ec1afb87b79faf638a4dcc348ddb6"
@@ -47,6 +42,11 @@ hash = "40c20e6c1085d1f45309b9f148bf4f6e"
 use = "Reledia/glow"
 rev = "bd3eaa5"
 hash = "92b5c58159a51c567f82b618cee2b78"
+
+[[plugin.deps]]
+use = "ndtoan96/ouch"
+rev = "1ee69a5"
+hash = "63679f3daf8551ff8755be38b5ced0f"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
