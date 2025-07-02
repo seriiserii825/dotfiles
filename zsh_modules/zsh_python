@@ -11,7 +11,7 @@ dir_path="/home/serii/Documents/python/py-pacman"
 alias pc="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-scss"
-alias scs="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
+alias scs="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-sync-settings"
 alias lf="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
@@ -26,7 +26,7 @@ dir_path="/home/serii/Documents/python/py-lv"
 alias lv="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-arch"
-alias arch="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
+alias arch="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-vue"
 alias vue="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
