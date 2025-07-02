@@ -17,7 +17,7 @@ dir_path="/home/serii/Documents/python/py-sync-settings"
 alias lf="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-clipboard"
-alias cl="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
+alias cl="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-commit"
 alias cmt="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
