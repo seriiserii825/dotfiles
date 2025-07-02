@@ -35,7 +35,7 @@ dir_path="/home/serii/Documents/python/py-files"
 alias dir_path="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-bitbucket"
-alias py_bitbucket="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
+alias py_bitbucket="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-files"
 alias py_files="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
