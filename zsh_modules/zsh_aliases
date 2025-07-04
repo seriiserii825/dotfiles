@@ -76,3 +76,8 @@ function gremote ()
     echo "Opening $repoUrl"
     xdg-open $repoUrl
 }
+
+
+function yz() {
+  cd "$(bash ~/bin/yz "$@")"
+}
