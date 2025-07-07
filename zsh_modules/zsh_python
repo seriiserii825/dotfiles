@@ -42,3 +42,6 @@ alias py_audio="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-dotfiles"
 alias py_dotfiles="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+
+dir_path="/home/serii/Documents/python/py-uv"
+alias uvr="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
