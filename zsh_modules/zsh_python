@@ -45,3 +45,6 @@ alias py_dotfiles="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-uv"
 alias uvr="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+
+dir_path="/home/serii/Documents/python/py-wp"
+alias py_wp="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
