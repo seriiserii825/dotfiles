@@ -1,0 +1,363 @@
+{
+    "version": 0,
+    "generatedAt": 1752216469210,
+    "generatedBy": "rb-responsive-website-tester",
+    "state": {
+        "rb-rwt-devices-store": {
+            "customDevices": [
+                {
+                    "id": "1752216762699",
+                    "name": "Desktop 1600x900",
+                    "width": 1600,
+                    "height": 900,
+                    "viewPort": {
+                        "width": 1600,
+                        "height": 900,
+                        "DPI": 3
+                    },
+                    "shouldShowAddressBar": true,
+                    "shouldShowMockUp": false,
+                    "shouldshowKeyboard": true,
+                    "isTouchCursorEnabled": true,
+                    "uiComponent": "SamsungGalaxyS24Ultra",
+                    "customSize": {
+                        "width": 384,
+                        "height": 824
+                    }
+                },
+                {
+                    "id": "1752216794158",
+                    "name": "Desktop 1920x900",
+                    "width": 1920,
+                    "height": 900,
+                    "viewPort": {
+                        "width": 1920,
+                        "height": 900,
+                        "DPI": 3
+                    },
+                    "shouldShowAddressBar": true,
+                    "shouldShowMockUp": false,
+                    "shouldshowKeyboard": true,
+                    "isTouchCursorEnabled": true,
+                    "uiComponent": "SamsungGalaxyS24Ultra",
+                    "customSize": {
+                        "width": 384,
+                        "height": 824
+                    }
+                }
+            ]
+        },
+        "rb-rwt-workspace-store": {
+            "workspaces": [
+                {
+                    "id": "123456789",
+                    "name": "Phones",
+                    "createdAt": "1752216469208",
+                    "screens": [
+                        {
+                            "id": "galaxy-note-20-ultra",
+                            "name": "Galaxy Note 20 Ultra",
+                            "width": 442,
+                            "height": 913,
+                            "viewPort": {
+                                "width": 412,
+                                "height": 883,
+                                "DPI": 1
+                            },
+                            "shouldShowAddressBar": true,
+                            "shouldShowMockUp": true,
+                            "shouldshowKeyboard": true,
+                            "isTouchCursorEnabled": true,
+                            "uiComponent": "SamsungGalaxyS20NoteUltra",
+                            "customSize": {
+                                "width": 412,
+                                "height": 883
+                            }
+                        },
+                        {
+                            "id": "samsung-Galaxy-s20",
+                            "name": "Samsung Galaxy S20",
+                            "width": 383,
+                            "height": 842,
+                            "viewPort": {
+                                "width": 360,
+                                "height": 800,
+                                "DPI": 4
+                            },
+                            "shouldShowAddressBar": true,
+                            "shouldShowMockUp": true,
+                            "shouldshowKeyboard": true,
+                            "isTouchCursorEnabled": true,
+                            "uiComponent": "SamsungGalaxyS20",
+                            "customSize": {
+                                "width": 360,
+                                "height": 800
+                            }
+                        },
+                        {
+                            "id": "samsung-galaxy-s24",
+                            "name": "samsung-Galaxy S24",
+                            "width": 383,
+                            "height": 842,
+                            "viewPort": {
+                                "width": 360,
+                                "height": 800,
+                                "DPI": 4
+                            },
+                            "shouldShowAddressBar": true,
+                            "shouldShowMockUp": true,
+                            "shouldshowKeyboard": true,
+                            "isTouchCursorEnabled": true,
+                            "uiComponent": "SamsungGalaxyS24Ultra",
+                            "customSize": {
+                                "width": 360,
+                                "height": 800
+                            }
+                        },
+                        {
+                            "id": "galaxy-s24-ultra",
+                            "name": "Galaxy S24 Ultra",
+                            "width": 384,
+                            "height": 824,
+                            "viewPort": {
+                                "width": 384,
+                                "height": 824,
+                                "DPI": 3
+                            },
+                            "shouldShowAddressBar": true,
+                            "shouldShowMockUp": true,
+                            "shouldshowKeyboard": true,
+                            "isTouchCursorEnabled": true,
+                            "uiComponent": "SamsungGalaxyS24Ultra",
+                            "customSize": {
+                                "width": 384,
+                                "height": 824
+                            }
+                        },
+                        {
+                            "id": "galaxy-s21-ultra",
+                            "name": "Galaxy S21 Ultra",
+                            "width": 414,
+                            "height": 884,
+                            "viewPort": {
+                                "width": 384,
+                                "height": 854,
+                                "DPI": 4
+                            },
+                            "shouldShowAddressBar": true,
+                            "shouldShowMockUp": true,
+                            "shouldshowKeyboard": true,
+                            "isTouchCursorEnabled": true,
+                            "uiComponent": "SamsungGalaxyS20",
+                            "customSize": {
+                                "width": 384,
+                                "height": 854
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Tablet",
+                    "id": "tablet1752216616899",
+                    "createdAt": "1752216616899",
+                    "screens": [
+                        {
+                            "id": "iPad-mini",
+                            "name": "iPad Mini",
+                            "width": 864,
+                            "height": 1253,
+                            "viewPort": {
+                                "width": 744,
+                                "height": 1133,
+                                "DPI": 4
+                            },
+                            "shouldShowAddressBar": true,
+                            "shouldShowMockUp": true,
+                            "shouldshowKeyboard": true,
+                            "isTouchCursorEnabled": true,
+                            "uiComponent": "IpadShape",
+                            "customSize": {
+                                "width": 744,
+                                "height": 1133
+                            }
+                        },
+                        {
+                            "id": "iPad-10-9",
+                            "name": "iPad 10.9 inch",
+                            "width": 933,
+                            "height": 1292,
+                            "viewPort": {
+                                "width": 820,
+                                "height": 1180,
+                                "DPI": 4
+                            },
+                            "shouldShowAddressBar": true,
+                            "shouldShowMockUp": true,
+                            "shouldshowKeyboard": true,
+                            "isTouchCursorEnabled": true,
+                            "uiComponent": "IpadShape",
+                            "customSize": {
+                                "width": 820,
+                                "height": 1180
+                            }
+                        },
+                        {
+                            "id": "iPad-air-13",
+                            "name": "iPad Air 13",
+                            "width": 1117,
+                            "height": 1457,
+                            "viewPort": {
+                                "width": 1024,
+                                "height": 1366,
+                                "DPI": 4
+                            },
+                            "shouldShowAddressBar": true,
+                            "shouldShowMockUp": true,
+                            "shouldshowKeyboard": true,
+                            "isTouchCursorEnabled": true,
+                            "uiComponent": "IpadShape",
+                            "customSize": {
+                                "width": 1024,
+                                "height": 1366
+                            }
+                        },
+                        {
+                            "id": "iPad-pro-11",
+                            "name": "iPad Pro 11 inch",
+                            "width": 923,
+                            "height": 1298,
+                            "viewPort": {
+                                "width": 834,
+                                "height": 1210,
+                                "DPI": 4
+                            },
+                            "shouldShowAddressBar": true,
+                            "shouldShowMockUp": true,
+                            "shouldshowKeyboard": true,
+                            "isTouchCursorEnabled": true,
+                            "uiComponent": "IpadShape",
+                            "customSize": {
+                                "width": 834,
+                                "height": 1210
+                            }
+                        },
+                        {
+                            "id": "iPad-pro-13",
+                            "name": "iPad Pro 13 inch",
+                            "width": 1120,
+                            "height": 1464,
+                            "viewPort": {
+                                "width": 1032,
+                                "height": 1376,
+                                "DPI": 4
+                            },
+                            "shouldShowAddressBar": true,
+                            "shouldShowMockUp": true,
+                            "shouldshowKeyboard": true,
+                            "isTouchCursorEnabled": true,
+                            "uiComponent": "IpadShape",
+                            "customSize": {
+                                "width": 1032,
+                                "height": 1376
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Desktops",
+                    "id": "desktops1752216700651",
+                    "createdAt": "1752216700651",
+                    "screens": [
+                        {
+                            "id": "1752216794158",
+                            "name": "Desktop 1920x900",
+                            "width": 1920,
+                            "height": 900,
+                            "viewPort": {
+                                "width": 1920,
+                                "height": 900,
+                                "DPI": 3
+                            },
+                            "shouldShowAddressBar": true,
+                            "shouldShowMockUp": false,
+                            "shouldshowKeyboard": true,
+                            "isTouchCursorEnabled": true,
+                            "uiComponent": "SamsungGalaxyS24Ultra",
+                            "customSize": {
+                                "width": 1920,
+                                "height": 900
+                            }
+                        },
+                        {
+                            "id": "1752216762699",
+                            "name": "Desktop 1600x900",
+                            "width": 1600,
+                            "height": 900,
+                            "viewPort": {
+                                "width": 1600,
+                                "height": 900,
+                                "DPI": 3
+                            },
+                            "shouldShowAddressBar": true,
+                            "shouldShowMockUp": false,
+                            "shouldshowKeyboard": true,
+                            "isTouchCursorEnabled": true,
+                            "uiComponent": "SamsungGalaxyS24Ultra",
+                            "customSize": {
+                                "width": 1600,
+                                "height": 900
+                            }
+                        },
+                        {
+                            "id": "macbook-pro-16-2024",
+                            "name": "Macbook Pro 16.2 inch",
+                            "width": 1779,
+                            "height": 1252,
+                            "viewPort": {
+                                "width": 1728,
+                                "height": 1117,
+                                "DPI": 2
+                            },
+                            "shouldShowAddressBar": true,
+                            "shouldShowMockUp": true,
+                            "shouldshowKeyboard": true,
+                            "isTouchCursorEnabled": true,
+                            "uiComponent": "MacbookPro2024Shape",
+                            "customSize": {
+                                "width": 1728,
+                                "height": 1117
+                            }
+                        }
+                    ]
+                }
+            ],
+            "selectedWorkspaceId": "desktops1752216700651",
+            "selectedScreenId": "1752216794158",
+            "_hasHydrated": true
+        },
+        "rb-rwt-settings": {
+            "downloadDirectory": "responsive-design-tester",
+            "imageFormat": "jpeg",
+            "fileNameSuffix": "autoIncrement"
+        },
+        "rb-rwt-feature-toggle": {
+            "activeFeatures": [
+                "DARK_THEME",
+                "SYNC_MOUSE_CLICK",
+                "SYNC_SCROLL"
+            ],
+            "_hasHydrated": true
+        },
+        "rb-rwt-ui-config": {
+            "version": "0",
+            "scale": 0.31,
+            "fitToScreenScale": 1,
+            "zoomLevel": "fit-to-viewport",
+            "_hasHydrated": true,
+            "onBoardingInfo": {
+                "onboardedAt": 1752216481540,
+                "onBoardedVersion": "0"
+            }
+        }
+    }
+}
