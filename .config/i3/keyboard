@@ -1,6 +1,7 @@
 #keyboard
 exec_always setxkbmap -option grp:caps_toggle "us,ru" -option grp:led_caps
 bindsym $mod+Shift+i exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh
+bindsym $mod+Shift+p exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh python
 bindsym $mod+q kill
 bindsym $mod+d exec --no-startup-id rofi -show drun -theme $HOME/dotfiles/rofi-collection/nord/nord.rasi
 bindsym $mod+Return exec alacritty
