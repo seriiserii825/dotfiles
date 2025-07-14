@@ -17,3 +17,4 @@ source ~/dotfiles/zsh_modules/zsh_dc_docker
 source ~/dotfiles/zsh_modules/zsh_oh_my_zsh
 source ~/dotfiles/zsh_modules/zsh_atuin
 source ~/dotfiles/zsh_modules/zsh_aliases
+source ~/dotfiles/zsh_modules/zsh_git

@@ -1,16 +1,8 @@
-alias gs='git status'
-alias gad='git add --all'
-alias gph='git push'
-alias ignore_ms='git config --local mgitstatus.ignore true'
-
-graph(){
-  git log --all --decorate --oneline --graph
-}
-
 function gcmt() {
   git add .
   git commit -m "$*"
 }
+
 function gitRestore(){
   git restore .
   git clean -f   
@@ -25,35 +17,3 @@ function gitRmCached(){
   git rm -rf --cached "$1"
 }
 
-function glg(){
-  git log --since="3am" --pretty=tformat:"%s" --reverse
-}
-
-#$1 = branch name
-#$2 = count of commits
-function glgm(){
-  git log master -20 --pretty="%C(Yellow)%h  %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s" --date=short -30 --reverse
-  # git log $1 -$2 --pretty=oneline --abbrev-commit --reverse | nvim
-}
-
-function glgmn(){
-  git log master -20 --pretty="%C(Yellow)%h  %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s" --date=short -30 --reverse | nvim
-  # git log $1 -$2 --pretty=oneline --abbrev-commit --reverse | nvim
-}
-
-# function glg(){
-#   git log $1 -$2 --pretty="%C(Yellow)%h  %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s" --date=short -30 --reverse | nvim
-#   # git log $1 -$2 --pretty=oneline --abbrev-commit --reverse | nvim
-# }
-
-function glga(){
-  git log --all --pretty="%C(Yellow)%h  %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s" --date=short -30 --reverse
-  # git log $1 -$2 --pretty=oneline --abbrev-commit --reverse | nvim
-}
-function glgan(){
-  git log --pretty="%C(Yellow)%h  %C(reset)%ad (%C(Green)%cr%C(reset))%x09 %C(Cyan)%an: %C(reset)%s" --date=short -30 --reverse | nvim
-  # git log $1 -$2 --pretty=oneline --abbrev-commit --reverse | nvim
-}
-
-alias git_diff="git diff -U0 | grep '^[+-]' | grep -Ev '^(--- a/|\+\+\+ b/)'"
-alias git_diff_removed="git diff -U0 | grep '^[-]' | grep -Ev '^(--- a/|\+\+\+ b/)' | xclip -sel clip"
