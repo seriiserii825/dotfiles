@@ -1,50 +1,44 @@
 dir_path="/home/serii/Documents/python/py-private"
-alias py-private="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias py-private="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/wp-python"
-alias wb="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias wb="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/python-scripts"
-alias pyscripts="${dir_path}/.venv/bin/python3.12 ${dir_path}/main.py"
+alias pyscripts="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-pacman"
-alias pc="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias pc="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-scss"
-alias scs="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias scs="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-sync-settings"
-alias lf="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias lf="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-clipboard"
-alias cl="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias cl="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-commit"
-alias cmt="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias cmt="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-lv"
-alias lv="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias lv="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-arch"
-alias arch="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias arch="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-vue"
-alias vue="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias vue="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-bitbucket"
-alias py_bitbucket="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias py_bitbucket="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-files"
-alias py_files="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
-
-dir_path="/home/serii/Documents/python/py-audio"
-alias py_audio="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias py_files="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-dotfiles"
-alias py_dotfiles="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
-
-dir_path="/home/serii/Documents/python/py-uv"
-alias uvr="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias py_dotfiles="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-wp"
-alias py_wp="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias py_wp="${dir_path}/venv/bin/python3 ${dir_path}/main.py"
