@@ -1,10 +1,10 @@
 export PATH="$HOME/.local/bin:$PATH"
+source ~/dotfiles/zsh_modules/zsh_colors
 source ~/dotfiles/zsh_modules/zsh_bash_scripts
 source ~/dotfiles/zsh_modules/zsh_nvm
 source ~/dotfiles/zsh_modules/zsh_default_editor
 source ~/dotfiles/zsh_modules/zsh_yazi
 source ~/dotfiles/zsh_modules/zsh_zoxide
-source ~/dotfiles/zsh_modules/zsh_colors
 source ~/dotfiles/zsh_modules/zsh_python
 source ~/dotfiles/zsh_modules/zsh_node
 source ~/dotfiles/zsh_modules/zsh_go
