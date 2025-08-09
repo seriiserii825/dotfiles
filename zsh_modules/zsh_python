@@ -1,9 +1,6 @@
 dir_path="/home/serii/Documents/python/py-private"
 alias py-private="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
-dir_path="/home/serii/Documents/python/wp-python"
-alias wb="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
-
 dir_path="/home/serii/Documents/python/python-scripts"
 alias pyscripts="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
@@ -41,4 +38,4 @@ dir_path="/home/serii/Documents/python/py-dotfiles"
 alias py_dotfiles="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-wp"
-alias py_wp="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias wb="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"

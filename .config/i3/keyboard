@@ -5,6 +5,7 @@ bindsym $mod+Shift+p exec --no-startup-id ~/Documents/bash/bash-scripts/insert_c
 bindsym $mod+q kill
 bindsym $mod+d exec --no-startup-id rofi -show drun -theme $HOME/dotfiles/rofi-collection/nord/nord.rasi
 bindsym $mod+Return exec alacritty
+bindsym $mod+Alt+v exec ~/.vim-anywhere/bin/run
 # bindsym $mod+Return exec ghostty
 # bindsym $mod+Return exec /usr/bin/warp-terminal
 bindsym $mod+Ctrl+2 resize shrink width 20 px or 20 ppt

@@ -45,7 +45,7 @@ alias zs="nvim ~/dotfiles/.zshrc"
 alias sz="source ~/dotfiles/.zshrc"
 alias zpy="nvim ~/dotfiles/zsh_modules/zsh_python"
 # alias wp="docker-compose run --rm"
-alias wp="docker-compose run --rm wpcli"
+# alias wp="docker-compose run --rm wpcli"
 
 # alias ll='lsd -lah'
 # alias lt='lsd --tree -d'
