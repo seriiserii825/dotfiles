@@ -14,11 +14,9 @@ assign [class="jetbrains-phpstorm"] 2
 assign [class="teams-for-linux" instance="teams-for-linux"] 4
 assign [class="Local" instance="local"] 6
 assign [class="TelegramDesktop" instance="telegram-desktop"] → 7
-# assign [class="qBittorrent" instance="qbittorrent"] 9
 assign [class="Audacious" instance="audacious"] 9
 assign [class="Gimp" instance="gimp"] 10
-# assign [class="qBittorrent" instance="qbittorrent"] 10
-assign [class="qBittorrent"] 10
+# assign [class="qBittorrent"] 10
 
 for_window [class="teams-for-linux" instance="teams-for-linux"] focus
 for_window [class="jetbrains-phpstorm"] focus
