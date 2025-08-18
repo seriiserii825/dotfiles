@@ -1,3 +1,10 @@
+alias gs="git status"
+alias gcp="git config pull.rebase false && git pull"
+alias gph="git push"
+alias gpl="git pull"
+alias gth="xdg-open 'https://github.com/seriiserii825?tab=repositories'"
+alias lz="lazygit"
+
 function gcmt() {
   git add .
   git commit -m "$*"
@@ -16,4 +23,3 @@ function checkInGit(){
 function gitRmCached(){
   git rm -rf --cached "$1"
 }
-

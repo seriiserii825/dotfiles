@@ -9,11 +9,9 @@ alias wbr="nvim ~/.config/waybar/config"
 alias jpegtojpg="rnst * && rename -v s/jpeg/jpg/g *"
 alias g="gulp"
 alias rconf="nvim ~/.config/ranger/rc.conf"
-alias lz="lazygit"
 alias sns="sudo systemctl stop nginx"
 alias search_emojji="google-chrome-stable https://search-emoji-pi.vercel.app/ru#Symbols &"
 
-alias gs='git status'
 # function yy() {
 # 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 # 	yazi "$@" --cwd-file="$tmp"
@@ -25,15 +23,9 @@ alias gs='git status'
 
 alias rp=".venv/bin/python3 -m main"
 
-alias gcp="git config pull.rebase false && git pull"
-alias gph="git push"
 alias rmn='rm -rf node_modules && rm -rf vendor'
 alias rmnl='rm -rf node_modules package-lock.json yarn.lock pnpm-lock.yaml && rm bun.lock'
-alias ms='mgitstatus -e -d 4'
-alias msf='mgitstatus -f -e -d 4'
-alias msignore='git config --local mgitstatus.ignore true'
 alias i3conf="nvim ~/.config/i3/config"
-alias gth="xdg-open 'https://github.com/seriiserii825?tab=repositories'"
 alias pacman_to_file='pacman -Qent > pkglist.txt'
 
 alias gL='cd "/home/serii/Local Sites"'
@@ -62,19 +54,6 @@ alias ex='exec ~/Documents/bash/bash-scripts/exit.sh'
 # alias mjml='./node_modules/.bin/mjml --watch index.mjml -o index.html'
 kill_server(){
   screen -S $1 -X quit
-}
-
-function gremote ()
-{
-    local remote=`git remote -v | head -n 1`
-    if [[ $remote =~ 'https' ]];
-    then
-        local repoUrl=`echo $remote | awk -F " " '{print $2}' | sed 's/\\.git//g'`
-    else
-        local repoUrl=`echo $remote | awk -F "@" '{print $2}' | awk -F " " '{print $1}' | sed 's/:/\\//g' | sed 's/.git//g' | awk '{print "https://"$1}'`
-    fi
-    echo "Opening $repoUrl"
-    xdg-open $repoUrl
 }
 
 
