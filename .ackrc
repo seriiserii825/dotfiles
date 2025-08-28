@@ -21,6 +21,10 @@
 --ignore-directory=is:.bzr
 --ignore-directory=is:Chrome
 --ignore-directory=is:uv.lock
+--ignore-directory=is:public/build
+--ignore-directory=is:bootstrap/ssr
+--ignore-directory=is:public/js
+--ignore-directory=is:lang
 
 # Codeville
 # http://freshmeat.sourceforge.net/projects/codeville
@@ -119,6 +123,7 @@
 --ignore-file=is:.DS_Store
 --ignore-file=is:assets/js/webpack.js
 --ignore-file=is:assets/js/webpack.js
+--ignore-file=is:public/js/ssr.js
 
 ### Files to ignore
 
