@@ -25,6 +25,7 @@
 --ignore-directory=is:bootstrap/ssr
 --ignore-directory=is:public/js
 --ignore-directory=is:lang
+--ignore-directory=is:public/landing
 
 # Codeville
 # http://freshmeat.sourceforge.net/projects/codeville
