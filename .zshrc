@@ -18,3 +18,4 @@ source ~/dotfiles/zsh_modules/zsh_oh_my_zsh
 source ~/dotfiles/zsh_modules/zsh_atuin
 source ~/dotfiles/zsh_modules/zsh_aliases
 source ~/dotfiles/zsh_modules/zsh_git
+source ~/dotfiles/zsh_modules/zsh_find

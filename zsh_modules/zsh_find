@@ -1,0 +1,8 @@
+findInFiles() {
+  local ext="$1"; shift
+  local pattern="$*"
+  [[ -z "$ext" || -z "$pattern" ]] && { echo "Usage: findInFiles EXT PATTERN"; return 1; }
+
+  echo "Searching for '$pattern' in *.$ext"
+  find . -type f -name "*.${ext}" -print0 | xargs -0 ack -H -- "$pattern"
+}
