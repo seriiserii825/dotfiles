@@ -13,7 +13,7 @@ workspace 4 output DVI-D-1
 workspace 6 output DVI-D-1
 
 #startup
-assign [class="figma-linux" instance="figma-linux"] 1
+# assign [class="figma-linux" instance="figma-linux"] 1
 assign [class="jetbrains-phpstorm"] 2
 assign [class="teams-for-linux" instance="teams-for-linux"] 4
 assign [class="Local" instance="local"] 6
