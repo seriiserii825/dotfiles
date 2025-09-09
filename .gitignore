@@ -1,5 +1,6 @@
 # Ignore everything in .config/copyq
 .config/copyq/*
+.config/nvim
 
 # But don't ignore these files
 !.config/copyq/copyq-commands.ini
