@@ -1,6 +1,6 @@
 alias mg='mogrify -format jpg *.png'
 alias mgjpg='mogrify -format jpg *.png && rm *.png && jpegoptim --strip-all --all-progressive -ptm 80 *.jpg'
-alias jall='jpegoptim --strip-all --all-progressive -ptm 80 *.jpg'
+alias jall='jpegoptim --strip-all --all-progressive -ptm 90 *.jpg'
 
 JPGTOjpg() {
   for I in *.JPG; 
