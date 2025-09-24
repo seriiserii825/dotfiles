@@ -7,6 +7,13 @@ function showSizes(){
     -exec identify -format "%f | %wx%h\n" {} \; | sort | column -t -s'|'
   }
 
+function removeSpaces(){
+  perl-rename 's/ /-/g' *
+  perl-rename 's/----/-/g' *
+  perl-rename 's/---/-/g' *
+  perl-rename 's/--/-/g' *
+}
+
 JPGTOjpg() {
   for I in *.JPG; 
   do mv "$I" `echo "$I" | sed "s/JPG/jpg/g"`;done
