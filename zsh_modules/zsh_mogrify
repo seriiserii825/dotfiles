@@ -2,6 +2,11 @@ alias mg='mogrify -format jpg *.png'
 alias mgjpg='mogrify -format jpg *.png && rm *.png && jpegoptim --strip-all --all-progressive -ptm 80 *.jpg'
 alias jall='jpegoptim --strip-all --all-progressive -ptm 90 *.jpg'
 
+function showSizes(){
+  find . -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" -o -iname "*.webp" \) \
+    -exec identify -format "%f | %wx%h\n" {} \; | sort | column -t -s'|'
+  }
+
 JPGTOjpg() {
   for I in *.JPG; 
   do mv "$I" `echo "$I" | sed "s/JPG/jpg/g"`;done
