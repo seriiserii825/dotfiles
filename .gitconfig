@@ -19,3 +19,8 @@
 	directory = /home/serii/Documents/docker/wp-regio-calor/wp-content/themes/lm-reggio-calor
 	directory = /home/serii/Documents/docker/lc-reggiocalor
 	directory = /home/serii/Documents/docker/docker-wp
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
