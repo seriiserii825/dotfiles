@@ -44,7 +44,7 @@ alias zpy="nvim ~/dotfiles/zsh_modules/zsh_python"
 alias ll='exa -lah'
 alias lm='exa -la -s=modified'
 alias lh='exa -la -s=size'
-alias lh='exa -la -s=size -r'
+alias lhr='exa -la -s=size -r'
 alias l='exa -lhF' 
 alias lt='exa -T -lah --level=2' 
 alias lta='exa -T -lah' 
