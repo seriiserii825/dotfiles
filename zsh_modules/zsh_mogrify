@@ -19,3 +19,4 @@ JPGTOjpg() {
   do mv "$I" `echo "$I" | sed "s/JPG/jpg/g"`;done
   echo "All JPG files have been converted to jpg."
 }
+
