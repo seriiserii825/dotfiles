@@ -1,5 +1,5 @@
 alias q="exit"
-alias clear_downloads="rm -rf ~/Downloads/* && rm -rf ~/Downloads/.*"
+alias clear_downloads='find ~/Downloads -mindepth 1 -delete'
 # alias v="vifm ."
 alias mkdir="mkdir -pv"
 alias cp="cp -iv"
