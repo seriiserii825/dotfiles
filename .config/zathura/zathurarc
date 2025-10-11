@@ -1,4 +1,9 @@
 # ==== Основные настройки ====
+# set font "Ubuntu 12"
+# один из вариантов, который у тебя точно есть
+# set font "FiraCode Nerd Font 11"
+# или моноширинный
+set font "FiraCode Nerd Font Mono 11"
 set adjust-open width         # Открывать по ширине окна
 set smooth-scroll true        # Плавная прокрутка
 set selection-clipboard clipboard
