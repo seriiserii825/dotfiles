@@ -37,3 +37,6 @@ map <C-r> recolor             # Вкл/выкл ночной режим
 map <C-=> zoom in
 map <C--> zoom out
 map <C-0> zoom best-fit
+
+set pages-per-row 2
+set first-page-column 1:2
