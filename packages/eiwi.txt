@@ -1,0 +1,13 @@
+ack
+browserpass-chrome
+clipman
+google-chrome
+local-by-flywheel-bin
+opera
+postman-bin
+pulseaudio-control
+rich-cli
+simplescreenrecorder
+snapd
+teams-for-linux
+yay
