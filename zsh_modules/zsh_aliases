@@ -61,3 +61,10 @@ kill_server(){
 function yz() {
   cd "$(bash ~/bin/yz "$@")"
 }
+
+
+function zp() {
+  local file
+  file=$(find ~/Documents/Books -type f -iname "*.pdf" | fzf)
+  [ -n "$file" ] && zathura "$file" &
+}

@@ -39,6 +39,3 @@ alias py_dotfiles="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-wp"
 alias wb="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
-
-dir_path="/home/serii/Documents/python/py-parser"
-alias pp="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"

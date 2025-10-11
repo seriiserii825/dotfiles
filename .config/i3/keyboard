@@ -5,6 +5,7 @@ bindsym $mod+Shift+p exec --no-startup-id ~/Documents/bash/bash-scripts/insert_c
 bindsym $mod+q kill
 bindsym $mod+d exec --no-startup-id rofi -show drun -theme $HOME/dotfiles/rofi-collection/nord/nord.rasi
 bindsym $mod+Return exec alacritty
+bindsym $mod+p exec zathura ~/Documents/Books
 
 # move focused window
 bindsym $mod+Shift+Up    move up 50 px

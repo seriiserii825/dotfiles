@@ -1,0 +1,12 @@
+set recolor true
+set recolor-darkcolor "#dcdccc"
+set recolor-lightcolor "#1e1e1e"
+set default-bg "#1e1e1e"
+set default-fg "#dcdccc"
+
+
+# set recolor true
+# set recolor-darkcolor "#CCCCCC"
+# set recolor-lightcolor "#1A1A1A"
+# set default-bg "#1A1A1A"
+# set default-fg "#CCCCCC"
