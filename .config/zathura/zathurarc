@@ -3,28 +3,28 @@
 # один из вариантов, который у тебя точно есть
 # set font "FiraCode Nerd Font 11"
 # или моноширинный
-set font "FiraCode Nerd Font Mono 11"
-set adjust-open width         # Открывать по ширине окна
+# set font "FiraCode Nerd Font Mono 11"
+# set adjust-open width         # Открывать по ширине окна
 set smooth-scroll true        # Плавная прокрутка
 set selection-clipboard clipboard
 set statusbar-visible true
 set scroll-step 100
 set zoom-center true
-
-# ==== Тёмная тема (Nord / Gruvbox mix) ====
-set recolor true
-set recolor-keephue false
-set recolor-lightcolor "#1e1e1e"   # Фон
-set recolor-darkcolor "#dcdccc"    # Текст
-
-# ==== Интерфейс ====
-set default-bg "#1e1e1e"
-set default-fg "#dcdccc"
-set inputbar-bg "#2a2a2a"
-set inputbar-fg "#dcdccc"
-set statusbar-bg "#2a2a2a"
-set statusbar-fg "#cccccc"
-
+#
+# # ==== Тёмная тема (Nord / Gruvbox mix) ====
+# set recolor true
+# set recolor-keephue false
+# set recolor-lightcolor "#1e1e1e"   # Фон
+# set recolor-darkcolor "#dcdccc"    # Текст
+#
+# # ==== Интерфейс ====
+# set default-bg "#1e1e1e"
+# set default-fg "#dcdccc"
+# set inputbar-bg "#2a2a2a"
+# set inputbar-fg "#dcdccc"
+# set statusbar-bg "#2a2a2a"
+# set statusbar-fg "#cccccc"
+#
 # ==== Дополнительно ====
 set highlight-color "#88c0d0"
 set highlight-active-color "#81a1c1"
