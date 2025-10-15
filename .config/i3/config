@@ -1,6 +1,5 @@
 set $mod Mod4
 font pango:FiraCodeNerdFontMono Sans Mono 10
-exec /home/serii/Documents/bash-arch/feh.sh
 
 include $HOME/.config/i3/autostart
 include $HOME/.config/i3/keyboard
