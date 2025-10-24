@@ -6,6 +6,7 @@
 
 keymap = [
 	# Goto
+  { on = [ "g", "r" ], run = "plugin go-to-root", desc = "Go to Git root" },
 	{ on = [ "g", "h" ],       run = "cd ~",             desc = "Go home" },
 	{ on = [ "g", "c" ],       run = "cd ~/.config",     desc = "Goto ~/.config" },
 	{ on = [ "g", "l" ],       run = "cd ~/Local\\ Sites",   desc = "Goto ~/Local Sites" },
@@ -356,7 +357,3 @@ on = "<A-y>"
 run = ["plugin copy-file-contents"]
 desc = "Copy contents of file"
 
-[[manager.prepend_keymap]]
-on = ["g", "r"]
-run = "plugin go-to-root go_to_git_root"
-desc = "Go to Git root"
