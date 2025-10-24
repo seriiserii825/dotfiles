@@ -356,3 +356,7 @@ on = "<A-y>"
 run = ["plugin copy-file-contents"]
 desc = "Copy contents of file"
 
+[[manager.prepend_keymap]]
+on = ["g", "r"]
+run = "plugin go-to-root go_to_git_root"
+desc = "Go to Git root"
