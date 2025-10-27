@@ -1,6 +1,38 @@
 alias mg='mogrify -format jpg *.png'
-alias mgjpg='mogrify -format jpg *.png && rm *.png && jpegoptim --strip-all --all-progressive -ptm 80 *.jpg'
-alias jall='jpegoptim --strip-all --all-progressive -ptm 90 *.jpg'
+
+function mgjpg(){
+  read -p "Enter quality (default 80): " quality
+  # check if it's not a number
+  if ! [[ "$quality" =~ ^[0-9]+$ ]]; then
+    echo "Invalid quality value. Please enter a number between 0 and 100."
+    exit 1
+  fi
+  if [ -z "$quality" ]; then
+    quality=80
+  fi
+  if [ "$quality" -lt 0 ] || [ "$quality" -gt 100 ]; then
+    echo "Quality must be between 0 and 100."
+    return 1
+  fi
+  mogrify -format jpg *.png && rm *.png && jpegoptim --strip-all --all-progressive -ptm "$quality" *.jpg
+}
+
+function jall(){
+  read -p "Enter quality (default 90): " quality
+  # check if it's not a number
+  if ! [[ "$quality" =~ ^[0-9]+$ ]]; then
+    echo "Invalid quality value. Please enter a number between 0 and 100."
+    exit 1
+  fi
+  if [ -z "$quality" ]; then
+    quality=90
+  fi
+  if [ "$quality" -lt 0 ] || [ "$quality" -gt 100 ]; then
+    echo "Quality must be between 0 and 100."
+    return 1
+  fi
+  jpegoptim --strip-all --all-progressive -ptm "$quality" *.jpg
+}
 
 function showSizes(){
   find . -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" -o -iname "*.webp" \) \
