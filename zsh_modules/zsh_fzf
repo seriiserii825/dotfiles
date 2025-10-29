@@ -16,3 +16,5 @@ export FZF_DEFAULT_COMMAND="rg --files --follow --no-ignore-vcs --hidden \
   -g '!**/.mypy_cache/*' \
   -g '!**/.angular/*'"
 alias f='nvim -o `fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"`'
+
+alias ff='function _rgnvim() { rg --line-number --column --color=always "$1" | fzf --ansi | awk -F ":" "{print \$1, \$2}" | while read -r file line; do nvim +$line "$file"; done; }; _rgnvim'
