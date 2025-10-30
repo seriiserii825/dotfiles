@@ -39,3 +39,6 @@ alias py_dotfiles="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-wp"
 alias wb="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+
+dir_path="/home/serii/Documents/python/py-srt"
+alias srt_translate="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
