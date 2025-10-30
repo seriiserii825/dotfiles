@@ -1,7 +1,7 @@
 # Ignore everything in .config/copyq
 .config/copyq/*
 .config/nvim
-
+.config/smplayer/file_settings/*
 # But don't ignore these files
 !.config/copyq/copyq-commands.ini
 !.config/copyq/copyq.conf
