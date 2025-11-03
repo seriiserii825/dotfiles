@@ -1,6 +1,6 @@
 set $mod Mod4
 font pango:FiraCodeNerdFontMono Sans Mono 10
-exec --no-startup-id picom -b --config ~/.config/picom/picom.conf
+# exec --no-startup-id picom -b --config ~/.config/picom/picom.conf
 
 include $HOME/.config/i3/autostart
 include $HOME/.config/i3/keyboard
