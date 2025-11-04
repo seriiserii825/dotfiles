@@ -12,14 +12,24 @@ alias rconf="nvim ~/.config/ranger/rc.conf"
 alias sns="sudo systemctl stop nginx"
 alias search_emojji="google-chrome-stable https://search-emoji-pi.vercel.app/ru#Symbols &"
 
-# function yy() {
-# 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-# 	yazi "$@" --cwd-file="$tmp"
-# 	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-# 		cd -- "$cwd"
-# 	fi
-# 	rm -f -- "$tmp"
-# }
+function rnst() {
+    perl-rename 's/ /-/g' *
+    perl-rename 's/,//g' *
+    perl-rename 's/\(//g' *
+    perl-rename 's/\)//g' *
+    perl-rename 's/----/-/g' *
+    perl-rename 's/---/-/g' *
+    perl-rename 's/--/-/g' *
+}
+
+function rndg() {
+    digits=$1
+    if [ -z "$digits" ]; then
+        digits=2
+    fi
+    perl-rename 's/(\d+)/sprintf("%0'${digits}'d", $1)/e' *
+    # perl-rename 's/(\d+)/sprintf("%03d", $1)/e' *
+}
 
 alias rp=".venv/bin/python3 -m main"
 
