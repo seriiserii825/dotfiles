@@ -5,6 +5,7 @@ bindsym $mod+Shift+p exec --no-startup-id ~/Documents/bash/bash-scripts/insert_c
 bindsym $mod+q kill
 bindsym $mod+d exec --no-startup-id rofi -show drun -theme $HOME/dotfiles/rofi-collection/nord/nord.rasi
 bindsym $mod+Return exec alacritty
+bindsym $mod+k exec kitty
 bindsym $mod+p exec zathura ~/Documents/Books
 
 # move focused window
@@ -46,7 +47,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # change focus
 bindsym $mod+j focus left
-bindsym $mod+k focus down
+# bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
