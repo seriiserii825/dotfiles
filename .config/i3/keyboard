@@ -7,6 +7,7 @@ bindsym $mod+d exec --no-startup-id rofi -show drun -theme $HOME/dotfiles/rofi-c
 bindsym $mod+Return exec alacritty
 bindsym $mod+k exec kitty
 bindsym $mod+p exec zathura ~/Documents/Books
+bindsym $mod+m exec mpv --player-operation-mode=pseudo-gui
 
 # move focused window
 bindsym $mod+Shift+Up    move up 50 px
