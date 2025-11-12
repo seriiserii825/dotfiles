@@ -2,21 +2,12 @@ default_orientation horizontal
 # default_orientation vertical
 workspace_layout default
 
-# exec_always --no-startup-id xrandr \
-#   --output VGA-0 --pos 0x0
-#   --output DVI-D-0 --primary --pos 1920x0 \
-
-# exec_always --no-startup-id xrandr \
-#   --output DVI-D-0 --primary --pos 0x0 \
-#   --output VGA-0 --pos 1920x0
-
-
 exec_always --no-startup-id xrandr \
-  --output VGA-0 --auto --pos 0x0 \
-  --output DVI-D-0 --auto --right-of VGA-0
+  --output HDMI-0 --auto --pos 0x0 \
+  --output DVI-D-0 --auto --right-of HDMI-0
 
-workspace 1 output VGA-0 
-workspace 7 output VGA-0
+workspace 1 output HDMI-0 
+workspace 7 output HDMI-0
 workspace 2 output DVI-D-0 
 workspace 4 output DVI-D-0
 workspace 6 output DVI-D-0
