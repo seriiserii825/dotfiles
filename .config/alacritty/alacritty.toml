@@ -19,7 +19,7 @@
 # https://github.com/alacritty/alacritty/tree/master#configuration
 
 [window]
-decorations = "none"
+# decorations = "none"
 opacity = 1
 
 # padding.x = 10
