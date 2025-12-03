@@ -1,5 +1,6 @@
 alias q="exit"
 alias clear_downloads='find ~/Downloads -mindepth 1 -delete && echo "Downloads cleared"'
+alias findphp='find . -name "*.php" -type f -exec awk '\''FNR == 1 && /^[[:space:]]+<\?[pP][hH][pP]/ {print FILENAME}'\'' {} \;'
 # alias v="vifm ."
 alias mkdir="mkdir -pv"
 alias cp="cp -iv"
