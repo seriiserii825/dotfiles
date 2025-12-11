@@ -4,6 +4,8 @@ bindsym $mod+Shift+i exec --no-startup-id ~/Documents/bash/bash-scripts/insert_c
 bindsym $mod+Shift+p exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh python
 bindsym $mod+Shift+t exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh typescript
 bindsym $mod+Shift+v exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh vue
+bindsym $mod+Shift+s exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh json
+bindsym $mod+Shift+c exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh scss
 bindsym $mod+q kill
 bindsym $mod+d exec --no-startup-id rofi -show drun -theme $HOME/dotfiles/rofi-collection/nord/nord.rasi
 bindsym $mod+Return exec alacritty
@@ -30,7 +32,6 @@ bindsym $mod+shift+y exec flameshot gui
 # bindsym $mod+Shift+y exec --no-startup-id ksnip --rectarea
 bindsym $mod+y exec --no-startup-id maim --select | xclip -selection clipboard -t image/jpg | sleep 1 && notify-send 'Screenshot copied to clipboard'
 bindsym $mod+ctrl+y exec --no-startup-id maim --select > ~/Downloads/screenshot.jpg
-bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 # bindsym $mod+t exec st 
@@ -65,7 +66,7 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s        			    sticky toggle;
-bindsym $mod+Shift+s			      split toggle
+# bindsym $mod+Shift+s			      split toggle
 # bindsym $mod+w layout tabbed
 # bindsym $mod+e layout toggle split
 
