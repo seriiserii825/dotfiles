@@ -346,6 +346,11 @@ on = [ "c", "r" ]
 run = "plugin path-from-root"
 desc = "Copies path from git root"
 
+[[manager.prepend_keymap]]
+on   = ["o", "b"]                  # press "o" then "b"
+run  = 'shell --confirm "google-chrome-stable \"$@\""'
+desc = "Open selected file in Chrome"
+
 [[mgr.prepend_keymap]]
 on = ["C"]
 run = "plugin ouch"
