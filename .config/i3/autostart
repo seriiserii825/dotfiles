@@ -11,8 +11,7 @@ exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
 # exec --no-startup-id /usr/bin/guake
 
 # exec_always --no-startup-id lxpolkit
-exec_always /usr/bin/telegram-desktop
-
+exec --no-startup-id telegram-desktop
 #applets
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
