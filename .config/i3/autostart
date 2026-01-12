@@ -2,7 +2,7 @@
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec nitrogen --restore
 exec_always --no-startup-id /usr/bin/copyq;
-# exec_always --no-startup-id /usr/bin/teams-for-linux;
+exec_always --no-startup-id /usr/bin/teams-for-linux;
 # exec_always --no-startup-id /opt/teams-for-linux/teams-for-linux
 # exec_always --no-startup-id /usr/bin/skypeforlinux;
 # exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit
