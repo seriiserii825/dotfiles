@@ -13,6 +13,7 @@ export FZF_DEFAULT_COMMAND="rg --files --follow --no-ignore-vcs --hidden \
   -g '!**/storage/*' \
   -g '!**/docker/mysql/*' \
   -g '!**/dist/*' \
+  -g '!**/.output/*' \
   -g '!**/.mypy_cache/*' \
   -g '!**/.angular/*'"
 alias f='nvim -o `fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"`'

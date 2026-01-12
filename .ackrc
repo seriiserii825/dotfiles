@@ -26,6 +26,8 @@
 --ignore-directory=is:public/js
 --ignore-directory=is:lang
 --ignore-directory=is:public/landing
+--ignore-directory=is:.output
+--ignore-directory=is:.nuxt
 
 # Codeville
 # http://freshmeat.sourceforge.net/projects/codeville
