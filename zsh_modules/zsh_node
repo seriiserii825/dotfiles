@@ -2,6 +2,7 @@ alias fsr='sudo fuser -k 3000/tcp && echo 'Terminated' || echo 'Nothing was runn
 alias fs8='sudo fuser -k 80/tcp && echo 'Terminated' || echo 'Nothing was running on the 80''
 alias nsh='zsh ~/Documents/bash/bash-scripts/zsh_nvm'
 alias brf="bun run format:scss"
+alias nru='npm run update'
 
 # alias ybs='yarn build && gitsftp.sh'
 # alias ybsa='yarn build && gitsftp.sh y'
