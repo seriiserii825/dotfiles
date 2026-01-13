@@ -1,7 +1,7 @@
 #keyboard
 exec_always setxkbmap -option grp:caps_toggle "us,ru" -option grp:led_caps
 bindsym $mod+Shift+i exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh
-bindsym $mod+Shift+p exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh python
+bindsym $mod+Shift+p exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh php
 bindsym $mod+Shift+t exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh typescript
 bindsym $mod+Shift+v exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh vue
 bindsym $mod+Shift+s exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh json
