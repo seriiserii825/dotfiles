@@ -41,6 +41,7 @@ alias rp=".venv/bin/python3 -m main"
 
 alias rmn='rm -rf node_modules && rm -rf vendor'
 alias rmnl='rm -rf node_modules package-lock.json yarn.lock pnpm-lock.yaml && rm bun.lock'
+alias rmt='rm twen* -rf'
 alias i3conf="nvim ~/.config/i3/config"
 alias pacman_to_file='pacman -Qent > pkglist.txt'
 
