@@ -6,6 +6,7 @@ bindsym $mod+Shift+t exec --no-startup-id ~/Documents/bash/bash-scripts/insert_c
 bindsym $mod+Shift+v exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh vue
 bindsym $mod+Shift+s exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh json
 bindsym $mod+Shift+c exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh scss
+bindsym $mod+Shift+h exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh html
 bindsym $mod+q kill
 bindsym $mod+d exec --no-startup-id rofi -show drun -theme $HOME/dotfiles/rofi-collection/nord/nord.rasi
 bindsym $mod+Return exec alacritty
