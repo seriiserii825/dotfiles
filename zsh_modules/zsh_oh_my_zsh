@@ -16,6 +16,7 @@ plugins=(
   fzf
   git-open
   you-should-use
+  zsh-npm-scripts-autocomplete
 )
 
 source "$ZSH/oh-my-zsh.sh"
