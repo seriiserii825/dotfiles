@@ -5,3 +5,5 @@
 # But don't ignore these files
 !.config/copyq/copyq-commands.ini
 !.config/copyq/copyq.conf
+.config/beekeeper-studio/*
+!.config/beekeeper-studio/app.db
