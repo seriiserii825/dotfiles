@@ -14,8 +14,8 @@ keybinds clear-defaults=true {
         bind "h" { MoveFocus "left"; }
         bind "i" { TogglePanePinned; SwitchToMode "normal"; }
         bind "j" { MoveFocus "down"; }
-        bind "k" { MoveFocus "up"; }
-        bind "l" { MoveFocus "right"; }
+        bind "_" { MoveFocus "up"; }
+        bind ";" { MoveFocus "right"; }
         bind "n" { NewPane; SwitchToMode "normal"; }
         bind "p" { SwitchFocus; }
         bind "Ctrl p" { SwitchToMode "normal"; }
