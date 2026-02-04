@@ -18,6 +18,20 @@ alias search_emojji="google-chrome-stable https://search-emoji-pi.vercel.app/ru#
 alias hg_home="ssh -i /home/serii/.ssh/id_ed25519_hostinger -p 2222 'node@72.62.93.126'"
 alias hg_office="ssh -i /home/serii/.ssh/id_ed25519_hostinger_office -p 2222 'node@72.62.93.126'"
 
+syncUpdate() {
+  local source="$HOME/Documents/bash/bash-scripts/update.sh"
+  local target="./scripts/update.sh"
+  
+  if [ ! -f "$source" ]; then
+    echo "❌ Source file not found: $source"
+    return 1
+  fi
+  
+  cp "$source" "$target"
+  chmod +x "$target"
+  echo "✅ Updated: $target"
+}
+
 function rnst() {
     perl-rename 's/ /-/g' *
     perl-rename 's/,//g' *
