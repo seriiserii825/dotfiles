@@ -35,8 +35,4 @@ for_window [class="st-256color" instance="st-256color"] floating enable, resize 
 for_window [class="Tk"] floating enable, resize set 800 800
 for_window [window_role="GtkFileChooserDialog" title="Save File" class="Google-chrome"] floating enable, resize set 900 800, move position center
 for_window [window_role="gimp-keyboard-shortcuts-dialog" class="Gimp"] floating enable, resize set 900 800, move position center
-# for_window [class="smplayer"] floating toggle, move container to workspace 7, sticky toggle, resize set 600 500, move position 10 800 
-for_window [class="^(ksnip|Ksnip)$"] \
-  floating enable, \
-  resize set 600 px 500 px, \
-  move position center
+for_window [class="mpv"] floating toggle, move container to workspace 7, sticky toggle, resize set 600 500, move position 10 800 
