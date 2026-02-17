@@ -1,5 +1,5 @@
 set $mod Mod4
-font pango:FiraCodeNerdFontMono Sans Mono 10
+font pango:FiraCodeNerdFontMono Sans Mono 12
 # exec --no-startup-id picom -b --config ~/.config/picom/picom.conf
 
 include $HOME/.config/i3/autostart

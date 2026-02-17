@@ -20,3 +20,11 @@ source ~/dotfiles/zsh_modules/zsh_aliases
 source ~/dotfiles/zsh_modules/zsh_git
 source ~/dotfiles/zsh_modules/zsh_find
 source ~/dotfiles/zsh_modules/zsh_zellij
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
