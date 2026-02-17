@@ -44,36 +44,18 @@ size = 11.0
 # small box when a HEX is detected by the editor.
 
 [keyboard]
-
-[[keyboard.bindings]]
-key = "Return"
-mods = "Control|Shift"
-action = "SpawnNewInstance"
-
-[[keyboard.bindings]]
-key = "Up"
-mods = "Control"
-action = "ScrollLineUp"
-
-[[keyboard.bindings]]
-key = "Down"
-mods = "Control"
-action = "ScrollLineDown"
-
-[[keyboard.bindings]]
-key = "Up"
-mods = "Control|Shift"
-action = "ScrollHalfPageUp"
-
-[[keyboard.bindings]]
-key = "Down"
-mods = "Control|Shift"
-action = "ScrollHalfPageDown"
+bindings = [
+    { key = 'Return',   mods = 'Control|Shift', action = 'SpawnNewInstance' },
+    # {key = 'V', mods = 'Control', action = 'ToggleViMode' },
+    # ScrollLineUp
+    {key = 'Up', mods = 'Control', action = 'ScrollLineUp' },
+# ScrollLineDown
+    {key = 'Down', mods = 'Control', action = 'ScrollLineDown' },
+#ScrollHalfPageUp
+    {key = 'Up', mods = 'Control|Shift', action = 'ScrollHalfPageUp' },
+# ScrollHalfPageDown
+    {key = 'Down', mods = 'Control|Shift', action = 'ScrollHalfPageDown' },
+]
 
 [selection]
 save_to_clipboard = true
-
-[[keyboard.bindings]]
-key = "Return"
-mods = "Shift"
-chars = "\u001B\r"
