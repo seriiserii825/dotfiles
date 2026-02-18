@@ -8,9 +8,8 @@
   "modules-left": ["hyprland/workspaces"],
   "modules-center": [],
   "modules-right": [
+    // "custom/weather",
     "custom/usb",
-    "mpd",
-    "idle_inhibitor",
     "pulseaudio",
     "network",
     "power-profiles-daemon",
@@ -27,6 +26,12 @@
     "hyprland/language",
   ],
   // Modules configuration
+  "custom/weather": {
+    "exec": "curl -sf 'https://wttr.in/Chisinau?format=%t+%C'",
+    "interval": 1800,
+    "format": "weather: {}",
+    "tooltip": false,
+  },
   "custom/usb": {
     "exec": "~/.config/polybar/system-usb-mount.sh",
     "interval": 1,
@@ -159,8 +164,8 @@
   },
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
-    "format-wifi": "net: {essid} ({signalStrength}%)",
-    "format-ethernet": "net: {ipaddr}/{cidr}",
+    "format-wifi": "net: {essid} ({signalStrength}%) {ipaddr}",
+    "format-ethernet": "net: eth",
     "tooltip-format": "{ifname} via {gwaddr}",
     "format-linked": "net: {ifname} (no IP)",
     "format-disconnected": "net: off",
