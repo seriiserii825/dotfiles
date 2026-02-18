@@ -8,6 +8,7 @@
   "modules-left": ["hyprland/workspaces", "hyprland/submap", "custom/media"],
   "modules-center": ["hyprland/window"],
   "modules-right": [
+    "custom/usb",
     "mpd",
     "idle_inhibitor",
     "pulseaudio",
@@ -19,13 +20,21 @@
     "temperature",
     "backlight",
     "keyboard-state",
-    "hyprland/language",
     "battery",
     "battery#bat2",
-    "clock",
     "tray",
+    "clock",
+    "hyprland/language",
   ],
   // Modules configuration
+  "custom/usb": {
+    "exec": "~/.config/polybar/system-usb-mount.sh",
+    "interval": 1,
+    "on-click": "~/.config/polybar/system-usb-mount.sh --mount",
+    "on-click-right": "~/.config/polybar/system-usb-mount.sh --unmount",
+    "format": " {}",
+    "tooltip": false,
+  },
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
@@ -95,7 +104,7 @@
   "clock": {
     // "timezone": "America/New_York",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:%H:%M:%S}",
+    "format": "{:%d %b %Y  %H:%M:%S}",
     "format-alt": "{:%Y-%m-%d}",
     "interval": 1,
   },
