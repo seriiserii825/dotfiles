@@ -15,6 +15,9 @@ bindsym $mod+k exec kitty
 bindsym $mod+p exec zathura ~/Documents/Books
 bindsym $mod+m exec mpv --player-operation-mode=pseudo-gui
 
+# Toggle picom config
+bindsym $mod+Ctrl+Shift+p exec --no-startup-id ~/Documents/bash/bash-scripts/toggle-picom.sh
+
 # move focused window
 bindsym $mod+Shift+Up    move up 50 px
 bindsym $mod+Shift+Down  move down 50 px
