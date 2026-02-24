@@ -33,13 +33,12 @@ syncUpdate() {
 }
 
 function rnst() {
-    perl-rename 's/ /-/g' *
-    perl-rename 's/,//g' *
-    perl-rename 's/\(//g' *
-    perl-rename 's/\)//g' *
-    perl-rename 's/----/-/g' *
-    perl-rename 's/---/-/g' *
-    perl-rename 's/--/-/g' *
+    perl-rename '
+        s/[ ,()]+/-/g;
+        s/-+/-/g;
+        s/^-//;
+        s/-$//;
+    ' -- *
 }
 
 function rndg() {
