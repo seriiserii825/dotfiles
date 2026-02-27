@@ -17,3 +17,7 @@ exec --no-startup-id telegram-desktop
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec blueman-mananger
+
+# clipboard
+exec_always --no-startup-id greenclip daemon
+
