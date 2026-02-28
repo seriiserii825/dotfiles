@@ -17,10 +17,10 @@ bindsym $mod+p exec zathura ~/Documents/Books
 bindsym $mod+m exec mpv --player-operation-mode=pseudo-gui
 
 # clipboard
-bindsym $mod+h exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard
-bindsym $mod+v exec ~/Documents/bash/bash-scripts/paste-next.sh
-bindsym $mod+b exec ~/Documents/bash/bash-scripts/paste-prev.sh
-bindsym $mod+ctrl+shift+v exec echo "0" > /tmp/paste_stack_index
+# bindsym $mod+h exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard
+# bindsym $mod+v exec ~/Documents/bash/bash-scripts/paste-next.sh
+# bindsym $mod+b exec ~/Documents/bash/bash-scripts/paste-prev.sh
+# bindsym $mod+ctrl+shift+v exec echo "0" > /tmp/paste_stack_index
 
 # Toggle picom config
 bindsym $mod+Ctrl+Shift+p exec --no-startup-id ~/Documents/bash/bash-scripts/toggle-picom.sh
