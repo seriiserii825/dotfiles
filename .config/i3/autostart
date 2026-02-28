@@ -21,3 +21,4 @@ exec blueman-mananger
 # clipboard
 # exec_always --no-startup-id greenclip daemon
 
+exec_always --no-startup-id clipmenud
