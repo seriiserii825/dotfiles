@@ -6,6 +6,7 @@ export FZF_DEFAULT_COMMAND="rg --files --follow --no-ignore-vcs --hidden \
   -g '!**/.venv/*' \
   -g '!**/autoload/*' \
   -g '!**/.nuxt/*' \
+  -g '!**/.next/*' \
   -g '!**/__pycache__/*' \
   -g '!**/assets/fonts/*' \
   -g '!**/assets/libs/*' \
