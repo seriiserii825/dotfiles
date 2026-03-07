@@ -48,3 +48,6 @@ alias nst="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-parsing"
 alias prs="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+
+dir_path="/home/serii/Documents/python/py-angular"
+alias ang="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
