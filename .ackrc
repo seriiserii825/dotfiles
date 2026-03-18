@@ -22,7 +22,9 @@
 --ignore-directory=is:Chrome
 --ignore-directory=is:uv.lock
 --ignore-directory=is:public/build
---ignore-directory=is:bootstrap/ssr
+--ignore-directory=is:public/build
+--ignore-directory=is:assets/libs/leaflet
+--ignore-directory=is:src/js/modules/libs
 --ignore-directory=is:public/js
 --ignore-directory=is:lang
 --ignore-directory=is:public/landing
