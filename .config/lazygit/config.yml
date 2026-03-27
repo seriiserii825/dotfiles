@@ -128,7 +128,7 @@ keybinding:
     scrollDownMain-alt2: "<c-d>" # main panel scroll down
     executeShellCommand: ":"
     createRebaseOptionsMenu: "m"
-    pushFiles: ""
+    pushFiles: "P"
     pullFiles: ""
     refresh: "R"
     createPatchOptionsMenu: "<c-p>"
