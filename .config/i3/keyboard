@@ -40,7 +40,8 @@ bindsym $mod+Ctrl+2 resize shrink width 20 px or 20 ppt
 bindsym $mod+Shift+q exec ~/Documents/bash/bash-scripts/i3-close-windows.sh
 bindsym $mod+g exec google-chrome-stable
 bindsym $mod+t exec telegram-desktop
-bindsym $mod+w exec local-by-flywheel
+# bindsym $mod+w exec local-by-flywheel
+bindsym $mod+w exec --no-startup-id wmctrl -x -a local.Local || /opt/Local/Local
 bindsym $mod+shift+y exec flameshot gui
 # bindsym $mod+Shift+y exec --no-startup-id ksnip --rectarea
 bindsym $mod+y exec --no-startup-id maim --select | xclip -selection clipboard -t image/jpg | sleep 1 && notify-send 'Screenshot copied to clipboard'
