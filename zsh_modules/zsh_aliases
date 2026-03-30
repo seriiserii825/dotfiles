@@ -62,7 +62,6 @@ alias gL='cd "/home/serii/Local Sites"'
 alias gc='cd ~/.config'
 alias dg='sudo dpkg -i'
 # alias shn="sudo shutdown -h now"
-alias srn="sudo shutdown -r now"
 alias zs="nvim ~/dotfiles/.zshrc"
 alias sz="source ~/dotfiles/.zshrc"
 alias zpy="nvim ~/dotfiles/zsh_modules/zsh_python"
