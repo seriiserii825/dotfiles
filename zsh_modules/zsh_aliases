@@ -70,8 +70,8 @@ alias zpy="nvim ~/dotfiles/zsh_modules/zsh_python"
 
 # alias ll='lsd -lah'
 # alias lt='lsd --tree -d'
-alias ll='exa -lah'
-alias lm='exa -la -s=modified'
+# alias ll='exa -lah'
+alias ll='exa -lah -s=modified -r'
 alias lh='exa -la -s=size'
 alias lhr='exa -la -s=size -r'
 alias l='exa -lhF' 
