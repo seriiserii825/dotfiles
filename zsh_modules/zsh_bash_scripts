@@ -1,5 +1,6 @@
 export PATH=~/Documents/bash-apps:$PATH
 export PATH=~/Documents/bash/bash-scripts:$PATH
+export PATH=~/Documents/bash/bash-ports:$PATH
 export PATH=~/Documents/bash/bash-git:$PATH
 export PATH=~/Documents/bash-private/dist:$PATH
 export PATH=~/Documents/bash/bash-wp:$PATH
