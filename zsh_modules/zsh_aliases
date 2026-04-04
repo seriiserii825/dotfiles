@@ -52,9 +52,23 @@ function rndg() {
 
 alias rp=".venv/bin/python3 -m main"
 
-alias rmn='rm -rf node_modules && rm -rf vendor'
-alias rmnl='rm -rf node_modules package-lock.json yarn.lock pnpm-lock.yaml && rm bun.lock && .nuxt'
-alias grmnl='git rm -rf node_modules package-lock.json yarn.lock pnpm-lock.yaml && rm bun.lock && .nuxt --cached'
+function rmnl() {
+  # remove everything if exists
+  [ -d "node_modules" ] && rm -rf node_modules
+  [ -f "package-lock.json" ] && rm -f package-lock.json
+  [ -f "yarn.lock" ] && rm -f yarn.lock
+  [ -f "pnpm-lock.yaml" ] && rm -f pnpm-lock.yaml
+  [ -f "bun.lock" ] && rm -f bun.lock
+  [ -d ".nuxt" ] && rm -rf .nuxt
+}
+function grmnl() {
+  git rm --cached -rf --ignore-unmatch node_modules
+  git rm --cached -f  --ignore-unmatch package-lock.json
+  git rm --cached -f  --ignore-unmatch yarn.lock
+  git rm --cached -f  --ignore-unmatch pnpm-lock.yaml
+  git rm --cached -f  --ignore-unmatch bun.lock
+  git rm --cached -rf --ignore-unmatch .nuxt
+}
 alias rmt='rm twen* -rf'
 alias i3conf="nvim ~/.config/i3/config"
 alias pacman_to_file='pacman -Qent > pkglist.txt'
