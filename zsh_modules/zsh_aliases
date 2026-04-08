@@ -52,6 +52,8 @@ function rndg() {
 
 alias rp=".venv/bin/python3 -m main"
 
+alias rmn="rm -rf node_modules"
+
 function rmnl() {
   # remove everything if exists
   [ -d "node_modules" ] && rm -rf node_modules
