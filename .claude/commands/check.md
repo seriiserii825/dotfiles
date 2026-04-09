@@ -9,4 +9,4 @@ Run the following checks and report results:
    - Otherwise — run `eslint . --ext .ts,.tsx`
 
 If both pass — report "✅ All checks passed".
-If something fails — show the exact errors and suggest fixes.
+If any check fails, report "❌ Some checks failed. Please fix the above errors and try again."
