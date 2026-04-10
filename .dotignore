@@ -7,7 +7,6 @@ phpstorm
 rofi-collection
 .eslintrc.json
 .p10k.zsh
-.prettierrc
 .vimrc
 dunstrc
 smplayer.keys
