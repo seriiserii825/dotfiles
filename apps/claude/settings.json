@@ -1,5 +1,13 @@
 {
   "permissions": {
-    "allow": ["Bash(npx vue-tsc*)", "Bash(npx tsc*)", "Bash(npx eslint*)", "Bash(echo*)"]
+    "allow": [
+      "Bash(npx vue-tsc*)",
+      "Bash(npx tsc*)",
+      "Bash(npx eslint*)",
+      "Bash(echo*)"
+    ]
+  },
+  "enabledPlugins": {
+    "figma@claude-plugins-official": true
   }
 }
