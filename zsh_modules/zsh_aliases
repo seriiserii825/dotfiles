@@ -15,7 +15,7 @@ alias rconf="nvim ~/.config/ranger/rc.conf"
 alias sns="sudo systemctl stop nginx"
 alias search_emojji="google-chrome-stable https://search-emoji-pi.vercel.app/ru#Symbols &"
 # alias phpchecker='php /home/serii/Documents/php/PHP_CodeSniffer/bin/phpcs'
-alias phpchecker='find . -name "*.php" -exec php -l {} \; 2>&1 | grep -v "No syntax errors detected"'
+alias check_php='find . -name "*.php" -exec php -l {} \; 2>&1 | grep -v "No syntax errors detected"'
 
 alias hg_home="ssh -i /home/serii/.ssh/id_ed25519_hostinger -p 2222 'node@72.62.93.126'"
 alias hg_office="ssh -i /home/serii/.ssh/id_ed25519_hostinger_office -p 2222 'node@72.62.93.126'"
