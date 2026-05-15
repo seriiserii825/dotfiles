@@ -1,7 +1,5 @@
 alias gs="git status"
 alias gcp="git config pull.rebase false && git pull"
-alias gph="git push"
-alias gpl="git pull"
 alias gth="xdg-open 'https://github.com/seriiserii825?tab=repositories'"
 alias lz="lazygit"
 alias glog="git log --oneline --graph --decorate --all"
