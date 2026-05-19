@@ -42,6 +42,12 @@ alias py_dotfiles="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-wp"
 alias wb="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias wba="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --menu-acf"
+alias wbp="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --menu-plugins"
+alias wbb="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --menu-backups"
+alias wbi="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --menu-images"
+alias wbm="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --menu-wp-menus"
+alias wbf="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --menu-files"
 
 dir_path="/home/serii/Documents/python/py-srt"
 alias srt_translate="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
