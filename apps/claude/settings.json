@@ -5,9 +5,11 @@
       "Bash(npx tsc*)",
       "Bash(npx eslint*)",
       "Bash(echo*)"
-    ]
+    ],
+    "defaultMode": "auto"
   },
   "enabledPlugins": {
     "figma@claude-plugins-official": true
-  }
+  },
+  "skipAutoPermissionPrompt": true
 }
