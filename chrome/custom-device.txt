@@ -254,5 +254,69 @@
       "mobile": false,
       "formFactors": []
     }
+  },
+  {
+    "title": "2560x1440",
+    "type": "unknown",
+    "user-agent": "",
+    "capabilities": [],
+    "screen": {
+      "device-pixel-ratio": 0,
+      "vertical": {
+        "width": 2560,
+        "height": 1440
+      },
+      "horizontal": {
+        "width": 1440,
+        "height": 2560
+      }
+    },
+    "modes": [
+      {
+        "title": "",
+        "orientation": "vertical",
+        "insets": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        }
+      },
+      {
+        "title": "",
+        "orientation": "horizontal",
+        "insets": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        }
+      }
+    ],
+    "show-by-default": true,
+    "dual-screen": false,
+    "foldable-screen": false,
+    "show": "Default",
+    "user-agent-metadata": {
+      "brands": [
+        {
+          "brand": "",
+          "version": ""
+        }
+      ],
+      "fullVersionList": [
+        {
+          "brand": "",
+          "version": ""
+        }
+      ],
+      "fullVersion": "",
+      "platform": "",
+      "platformVersion": "",
+      "architecture": "",
+      "model": "",
+      "mobile": false,
+      "formFactors": []
+    }
   }
 ]
