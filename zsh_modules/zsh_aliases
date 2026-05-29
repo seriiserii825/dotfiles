@@ -22,20 +22,6 @@ alias hg_office="ssh -i /home/serii/.ssh/id_ed25519_hostinger_office -p 2222 'no
 
 alias grm="git rm -rf --cached --ignore-unmatch $*"
 
-syncUpdate() {
-  local source="$HOME/Documents/bash/bash-scripts/update.sh"
-  local target="./scripts/update.sh"
-  
-  if [ ! -f "$source" ]; then
-    echo "❌ Source file not found: $source"
-    return 1
-  fi
-  
-  cp "$source" "$target"
-  chmod +x "$target"
-  echo "✅ Updated: $target"
-}
-
 function rnst() {
     perl-rename '
         s/[ ,()]+/-/g;
