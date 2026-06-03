@@ -1,3 +1,4 @@
+export PATH=~/Documents/bash-gita:$PATH
 export PATH=~/Documents/bash-apps:$PATH
 export PATH=~/Documents/bash/bash-scripts:$PATH
 export PATH=~/Documents/bash/bash-ports:$PATH
