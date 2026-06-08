@@ -1,8 +1,13 @@
 [
   {
     "videoId": "7fG8RJTlwAU",
+    "seconds": 9202,
+    "name": "session functional"
+  },
+  {
+    "videoId": "7fG8RJTlwAU",
     "seconds": 9097,
-    "name": "finished geolocation save in session"
+    "name": "set country name by code"
   },
   {
     "videoId": "7fG8RJTlwAU",
