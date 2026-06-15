@@ -1,8 +1,13 @@
 [
   {
     "videoId": "7fG8RJTlwAU",
-    "seconds": 10896,
-    "name": "save"
+    "seconds": 10782,
+    "name": "VerificationMail"
+  },
+  {
+    "videoId": "7fG8RJTlwAU",
+    "seconds": 10611,
+    "name": "MailService"
   },
   {
     "videoId": "7fG8RJTlwAU",
@@ -12,7 +17,7 @@
   {
     "videoId": "7fG8RJTlwAU",
     "seconds": 10369,
-    "name": "mail verification"
+    "name": "set env mail variables and getConfigEmail"
   },
   {
     "videoId": "7fG8RJTlwAU",
