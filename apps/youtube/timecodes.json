@@ -1,13 +1,18 @@
 [
   {
     "videoId": "7fG8RJTlwAU",
-    "seconds": 10782,
-    "name": "VerificationMail"
+    "seconds": 11359,
+    "name": "need to finish verification"
+  },
+  {
+    "videoId": "7fG8RJTlwAU",
+    "seconds": 10781,
+    "name": "verification email"
   },
   {
     "videoId": "7fG8RJTlwAU",
     "seconds": 10611,
-    "name": "MailService"
+    "name": "entity mail"
   },
   {
     "videoId": "7fG8RJTlwAU",
@@ -17,7 +22,7 @@
   {
     "videoId": "7fG8RJTlwAU",
     "seconds": 10369,
-    "name": "set env mail variables and getConfigEmail"
+    "name": "mail env variables"
   },
   {
     "videoId": "7fG8RJTlwAU",
