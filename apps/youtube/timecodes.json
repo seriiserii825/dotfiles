@@ -1,6 +1,16 @@
 [
   {
     "videoId": "7fG8RJTlwAU",
+    "seconds": 12979,
+    "name": "reset password"
+  },
+  {
+    "videoId": "7fG8RJTlwAU",
+    "seconds": 12636,
+    "name": "mail service send token"
+  },
+  {
+    "videoId": "7fG8RJTlwAU",
     "seconds": 12001,
     "name": "need to finish in graphql"
   },
@@ -17,31 +27,11 @@
   {
     "videoId": "7fG8RJTlwAU",
     "seconds": 12187,
-    "name": "send verification to email"
+    "name": "react-html style"
   },
   {
     "videoId": "7fG8RJTlwAU",
     "seconds": 10369,
     "name": "mail env variables"
-  },
-  {
-    "videoId": "7fG8RJTlwAU",
-    "seconds": 9202,
-    "name": "find,findAll,clearCookie,deleteSession"
-  },
-  {
-    "videoId": "7fG8RJTlwAU",
-    "seconds": 9097,
-    "name": "set country name by code"
-  },
-  {
-    "videoId": "7fG8RJTlwAU",
-    "seconds": 8252,
-    "name": "account location in session"
-  },
-  {
-    "videoId": "7fG8RJTlwAU",
-    "seconds": 7700,
-    "name": "me with auth guards"
   }
 ]
