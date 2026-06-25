@@ -36,7 +36,7 @@ normal.family = "FiraCodeNerdFontMono"
 # normal.family = "ComicShannsMonoNerdFontMono"
 # size = 12.0
 # normal.family = "JetBrainsMono Nerd Font"  # Replace with your primary font
-size = 11.0
+size = 12.0
 # size = 8.0
 
 # Tip: for inspiration, look for values in the source code files of your favorite VS Code themes, and use the color picker in
