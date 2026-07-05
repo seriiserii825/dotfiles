@@ -63,6 +63,8 @@ function grmnl() {
 }
 alias rmt='rm twen* -rf'
 alias i3conf="nvim ~/.config/i3/config"
+alias nvim-lua="NVIM_APPNAME=nvim-lua nvim"
+alias nvim-coc="NVIM_APPNAME=nvim nvim"
 alias pacman_to_file='pacman -Qent > pkglist.txt'
 
 alias gL='cd "/home/serii/Local Sites"'
