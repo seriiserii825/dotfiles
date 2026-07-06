@@ -7,8 +7,6 @@ alias msf='mgitstatus -e -f -d 4 --no-stashes'
 alias mkdir="mkdir -pv"
 alias cp="cp -iv"
 alias mv="mv -iv"
-alias hpr="nvim ~/.config/hypr/hypr.conf"
-alias wbr="nvim ~/.config/waybar/config"
 alias jpegtojpg="rnst * && rename -v s/jpeg/jpg/g *"
 alias g="gulp"
 alias rconf="nvim ~/.config/ranger/rc.conf"
@@ -63,8 +61,6 @@ function grmnl() {
 }
 alias rmt='rm twen* -rf'
 alias i3conf="nvim ~/.config/i3/config"
-alias nvim-lua="NVIM_APPNAME=nvim-lua nvim"
-alias nvim-coc="NVIM_APPNAME=nvim nvim"
 alias pacman_to_file='pacman -Qent > pkglist.txt'
 
 alias gL='cd "/home/serii/Local Sites"'

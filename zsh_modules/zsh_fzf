@@ -18,4 +18,4 @@ export FZF_DEFAULT_COMMAND="rg --files --follow --no-ignore-vcs --hidden \
   -g '!**/.mypy_cache/*' \
   -g '!**/.angular/*'"
 
-alias f='nvim -o `fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"`'
+alias f='nvim "$(fzf --preview "bat --color=always --style=numbers --line-range=:500 {}")"'
