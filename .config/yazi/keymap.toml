@@ -517,3 +517,8 @@ desc = "Compress with ouch"
 on = "<A-y>"
 run = ["plugin copy-file-contents"]
 desc = "Copy contents of file"
+
+[[mgr.prepend_keymap]]
+on = ["c", "s"]
+run = "plugin rename-copy"
+desc = "Rename, copy new name to clipboard, restore original"
