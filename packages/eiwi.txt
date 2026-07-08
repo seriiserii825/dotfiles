@@ -10,4 +10,5 @@ rich-cli
 simplescreenrecorder
 snapd
 teams-for-linux
+xdg-desktop-portal-termfilechooser
 yay
