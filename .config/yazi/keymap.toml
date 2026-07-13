@@ -76,14 +76,8 @@ keymap = [
   { on = "l", run = "enter", desc = "Enter the child directory" },
 
 
-  { on = [
-    "g",
-    "b",
-  ], run = "back", desc = "Go back to the previous directory" },
-  { on = [
-    "g",
-    "n",
-  ], run = "forward", desc = "Go forward to the next directory" },
+  { on = "H", run = "back", desc = "Go back to the previous directory" },
+  { on = "L", run = "forward", desc = "Go forward to the next directory" },
 
   # Toggle
   { on = "<Space>", run = [
