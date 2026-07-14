@@ -59,3 +59,19 @@ busctl --user call org.freedesktop.portal.Desktop /org/freedesktop/portal/deskto
 Частые грабли: осиротевший вручную запущенный `xdg-desktop-portal-termfilechooser` держит имя на D-Bus (`failed to acquire service name: File exists`) — проверить `ps aux | grep termfilechooser`, убить лишнее, перезапустить сервис.
 
 Как пользоваться (после установки): при сохранении файла yazi открывает директорию с файлом-плейсхолдером (предложенное Chrome имя). Подтверждение сохранения — действие `open` на этом файле (у пользователя в `.config/yazi/keymap.toml` забинжено на `o`, не на `Enter` — в главном режиме менеджера `<Enter>` не забинден вообще). `q` — отмена.
+
+### flameshot-save-dialog-with-yazi
+
+Тот же портал (`xdg-desktop-portal-termfilechooser`, см. [[chrome-open-dialog-with-yazi]]) работает и с Teams (GTK/Electron-приложение), но не с Flameshot "из коробки".
+
+Причина: Flameshot — Qt-приложение (`QFileDialog`), а `GTK_USE_PORTAL=1` — переменная, которую проверяет только GTK-тулкит (`GtkFileChooserNative`). Qt по умолчанию рисует диалог сам, не обращаясь к `org.freedesktop.portal.FileChooser` по D-Bus вообще — поэтому termfilechooser не срабатывает, и вместо yazi открывается нативный Qt-диалог. Это подтверждённое поведение (открытый issue в самом flameshot, [#2628](https://github.com/flameshot-org/flameshot/issues/2628)).
+
+Решение: у Qt есть свой platform-theme плагин для портала — `libqxdgdesktopportal.so` (входит в qt5-base/qt6-base, ничего доп. ставить не нужно, проверяется через `find /usr/lib -ipath "*platformthemes*"`). Нужно запускать Flameshot с `QT_QPA_PLATFORMTHEME=xdgdesktopportal`.
+
+`.config/i3/keyboard` уже содержит биндинг:
+```
+bindsym $mod+shift+y exec env QT_QPA_PLATFORMTHEME=xdgdesktopportal flameshot gui
+```
+Если на новой машине Flameshot запускается иначе (другой биндинг/автостарт) — добавить `QT_QPA_PLATFORMTHEME=xdgdesktopportal` туда же. Как и с Chrome, если Flameshot уже был запущен без этой переменной — поможет только новый запуск процесса (у flameshot обычно нет постоянно висящего окна, так что это редко актуально, но трей-иконка `flameshot` может быть таким процессом — проверить `pgrep -al flameshot`).
+
+Проверить: `$mod+shift+y` → выделить область → Save → должно открыться floating-окно alacritty с yazi, а не нативный Qt Save-диалог.
