@@ -11,6 +11,11 @@
   "enabledPlugins": {
     "figma@claude-plugins-official": true
   },
+  "tui": "fullscreen",
+  "voice": {
+    "enabled": true,
+    "mode": "hold"
+  },
   "skipAutoPermissionPrompt": true,
-  "tui": "fullscreen"
+  "voiceEnabled": true
 }
