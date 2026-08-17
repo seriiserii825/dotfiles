@@ -76,6 +76,33 @@ bindsym $mod+shift+y exec env QT_QPA_PLATFORMTHEME=xdgdesktopportal flameshot gu
 
 Проверить: `$mod+shift+y` → выделить область → Save → должно открыться floating-окно alacritty с yazi, а не нативный Qt Save-диалог.
 
+### nvidia-kernel-userspace-mismatch — alacritty/OpenGL не запускаются после обновления
+
+**Симптом:** alacritty (и любые GPU-приложения) падают при запуске с ошибкой:
+```
+Error: Error { raw_code: Some(2), raw_os_message: Some("BadValue (integer parameter out of range for operation)"), kind: BadAttribute }
+```
+Следствие: `xdg-desktop-portal-termfilechooser` не может запустить yazi (в логах `could not execute 'yazi-wrapper.sh': exit code -1`) — диалог сохранения/открытия файлов в Chrome/Flameshot перестаёт работать.
+
+**Причина:** несоответствие версий NVIDIA kernel модуля и userspace после обновления пакетов без перезагрузки.
+
+**Диагностика (3 команды):**
+```bash
+# 1. Версия загруженного kernel модуля:
+cat /proc/driver/nvidia/version
+
+# 2. Версия userspace пакета:
+pacman -Q nvidia-utils nvidia-open-dkms
+
+# 3. Для какого ядра собран DKMS модуль vs что сейчас запущено:
+dkms status nvidia && uname -r
+```
+Если версии в п.1 и п.2 не совпадают — это оно. Если в п.3 DKMS модуль собран для другого ядра — аналогично.
+
+**Решение:** перезагрузка. После неё загрузится новое ядро с правильным DKMS модулем.
+
+**Дополнительно:** если alacritty не запускается даже без конфига (`alacritty --config-file /dev/null`), причина точно не в конфиге — проверять GPU/driver уровень.
+
 ### lazygit config.yml — нотация Ctrl+Shift в кастомных биндингах
 
 `.config/lazygit/config.yml` — общий для всех машин (симлинк), но версия самого `lazygit` (пакет `extra/lazygit`) может отличаться между машинами и обновляется независимо на каждой.
