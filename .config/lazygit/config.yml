@@ -40,9 +40,10 @@ gui:
   commandLogSize: 8
   splitDiff: "auto" # one of 'auto' | 'always'
 git:
-  pagers:
+  diffRenderers:
     - colorArg: always
       useConfig: false
+      type: rawGit
   commit:
     signOff: false
   merging:
