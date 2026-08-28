@@ -9,7 +9,7 @@
   editor = true
   # autocrlf = true
 	fileMode = false
-	symlinks = false
+	symlinks = true
 
 [safe]
 	directory = /home/serii/Downloads/my-wordpress/wp-content/themes/bs-servizi-express-casa-24h
