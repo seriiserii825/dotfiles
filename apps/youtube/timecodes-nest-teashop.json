@@ -1,0 +1,77 @@
+[
+  {
+    "videoId": "kcboUTW9a0o",
+    "seconds": 951,
+    "name": "create user and store entity"
+  },
+  {
+    "videoId": "zartL4W9Qfc",
+    "seconds": 37,
+    "name": "start video"
+  },
+  {
+    "videoId": "BVIffUyYlUk",
+    "seconds": 9183,
+    "name": "menu list"
+  },
+  {
+    "videoId": "BVIffUyYlUk",
+    "seconds": 8431,
+    "name": "start sidebar"
+  },
+  {
+    "videoId": "BVIffUyYlUk",
+    "seconds": 8058,
+    "name": "toggle password"
+  },
+  {
+    "videoId": "BVIffUyYlUk",
+    "seconds": 6517,
+    "name": "set token in cookie"
+  },
+  {
+    "videoId": "BVIffUyYlUk",
+    "seconds": 1973,
+    "name": "start api from backend"
+  },
+  {
+    "videoId": "7fG8RJTlwAU",
+    "seconds": 13808,
+    "name": "get new password"
+  },
+  {
+    "videoId": "7fG8RJTlwAU",
+    "seconds": 12979,
+    "name": "reset password"
+  },
+  {
+    "videoId": "7fG8RJTlwAU",
+    "seconds": 12636,
+    "name": "mail service send token"
+  },
+  {
+    "videoId": "7fG8RJTlwAU",
+    "seconds": 12001,
+    "name": "need to finish in graphql"
+  },
+  {
+    "videoId": "7fG8RJTlwAU",
+    "seconds": 10781,
+    "name": "verification email"
+  },
+  {
+    "videoId": "7fG8RJTlwAU",
+    "seconds": 10611,
+    "name": "entity mail"
+  },
+  {
+    "videoId": "7fG8RJTlwAU",
+    "seconds": 12187,
+    "name": "react-html style"
+  },
+  {
+    "videoId": "7fG8RJTlwAU",
+    "seconds": 10369,
+    "name": "mail env variables"
+  }
+]
