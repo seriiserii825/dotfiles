@@ -1,6 +1,21 @@
 [
   {
     "videoId": "kcboUTW9a0o",
+    "seconds": 1931,
+    "name": "auth strategy"
+  },
+  {
+    "videoId": "kcboUTW9a0o",
+    "seconds": 1627,
+    "name": "setup auth"
+  },
+  {
+    "videoId": "kcboUTW9a0o",
+    "seconds": 1590,
+    "name": "setup cookie"
+  },
+  {
+    "videoId": "kcboUTW9a0o",
     "seconds": 1472,
     "name": "prisma configuration"
   },
