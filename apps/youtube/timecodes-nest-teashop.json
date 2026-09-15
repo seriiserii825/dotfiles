@@ -1,6 +1,26 @@
 [
   {
     "videoId": "kcboUTW9a0o",
+    "seconds": 3733,
+    "name": "get-new-token-from-login"
+  },
+  {
+    "videoId": "kcboUTW9a0o",
+    "seconds": 3283,
+    "name": "get new tokens from auth service"
+  },
+  {
+    "videoId": "kcboUTW9a0o",
+    "seconds": 2662,
+    "name": "auth-servece and controller"
+  },
+  {
+    "videoId": "kcboUTW9a0o",
+    "seconds": 2086,
+    "name": "google-strategy"
+  },
+  {
+    "videoId": "kcboUTW9a0o",
     "seconds": 1931,
     "name": "auth strategy"
   },
