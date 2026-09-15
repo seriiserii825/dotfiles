@@ -1,5 +1,7 @@
 alias gd="cd ~/dotfiles"
 alias gkb='cd ~/Documents/Knowledge-base_'
+alias gctc='cd ~/Documents/chrome-extensions/chrome-tabs-copy'
+alias gdy='cd ~/dotfiles/apps/youtube'
 alias gD='cd ~/Documents'
 alias gF='cd ~/Documents/my-fonts'
 alias gdwn='cd ~/Downloads'
