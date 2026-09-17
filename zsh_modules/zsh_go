@@ -12,3 +12,27 @@ alias gb="cd ~/Documents/bash"
 alias zn="cd ~/.config/nvim"
 alias yc="nvim ~/.config/yazi/yazi.toml"
 alias ym="nvim ~/.config/yazi/keymap.toml"
+
+goUp() {
+  local steps="$1"
+
+  if [[ -z "$steps" || ! "$steps" =~ ^[0-9]+$ || "$steps" -eq 0 ]]; then
+    echo "goUp: pass a positive integer (e.g. goUp 3)" >&2
+    return 1
+  fi
+
+  local -a parts
+  parts=(${(s:/:)PWD})
+  local depth=$(( ${#parts} - 1 ))
+
+  if (( steps > depth )); then
+    echo "goUp: can only go up $depth level(s) from here" >&2
+    return 1
+  fi
+
+  local target="" i
+  for (( i = 0; i < steps; i++ )); do
+    target+="../"
+  done
+  cd "$target"
+}
