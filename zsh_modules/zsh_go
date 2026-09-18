@@ -13,7 +13,7 @@ alias zn="cd ~/.config/nvim"
 alias yc="nvim ~/.config/yazi/yazi.toml"
 alias ym="nvim ~/.config/yazi/keymap.toml"
 
-goUp() {
+gU() {
   local steps="$1"
 
   if [[ -z "$steps" || ! "$steps" =~ ^[0-9]+$ || "$steps" -eq 0 ]]; then
