@@ -9,3 +9,4 @@
 !.config/beekeeper-studio/app.db
 
 apps/filezilla
+apps/filezilla.sha256
