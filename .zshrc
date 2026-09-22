@@ -20,6 +20,7 @@ source ~/dotfiles/zsh_modules/zsh_aliases
 source ~/dotfiles/zsh_modules/zsh_git
 source ~/dotfiles/zsh_modules/zsh_find
 source ~/dotfiles/zsh_modules/zsh_zellij
+source ~/dotfiles/zsh_modules/zsh_local_cli
 
 . "$HOME/.atuin/bin/env"
 

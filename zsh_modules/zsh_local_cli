@@ -1,0 +1,5 @@
+alias lcsc="local-cli start-current"
+alias lcfc="local-cli stop-current"
+alias lcss="local-cli start-select"
+alias lcfs="local-cli stop-select"
+alias lcsa="local-cli stop-all"
