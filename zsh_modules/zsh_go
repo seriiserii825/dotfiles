@@ -21,9 +21,13 @@ gU() {
     return 1
   fi
 
-  local -a parts
-  parts=(${(s:/:)PWD})
-  local depth=$(( ${#parts} - 1 ))
+  local depth=0
+  local p="$PWD"
+  while [[ "$p" != "/" ]]; do
+    depth=$(( depth + 1 ))
+    p="${p%/*}"
+    [[ -z "$p" ]] && p="/"
+  done
 
   if (( steps > depth )); then
     echo "goUp: can only go up $depth level(s) from here" >&2
