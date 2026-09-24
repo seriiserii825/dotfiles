@@ -69,3 +69,6 @@ alias py-ports="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-playwright"
 alias py-playwright="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+
+dir_path="/home/serii/Documents/python/py-ng"
+alias ngp="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
