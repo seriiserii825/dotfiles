@@ -74,10 +74,8 @@ alias zpy="nvim ~/dotfiles/zsh_modules/zsh_python"
 # alias wp="docker-compose run --rm"
 # alias wp="docker-compose run --rm wpcli"
 
-# alias ll='lsd -lah'
-# alias lt='lsd --tree -d'
-# alias ll='exa -lah'
-alias ll='exa -lah -s=modified -r'
+alias lls='exa -lah -s=modified -r'
+alias ll='exa -lah'
 alias lh='exa -la -s=size'
 alias lhr='exa -la -s=size -r'
 alias l='exa -lhF' 
