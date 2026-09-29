@@ -74,6 +74,9 @@ alias zpy="nvim ~/dotfiles/zsh_modules/zsh_python"
 # alias wp="docker-compose run --rm"
 # alias wp="docker-compose run --rm wpcli"
 
+# поиск алиасов по шаблону без кавычек: als ll*
+alias als='noglob alias -m'
+
 # exa: -l подробный список, -a со скрытыми, -h строка заголовков колонок (не human-readable — размеры и так читаемые)
 # список со скрытыми, по дате изменения: самые свежие сверху
 alias lls='exa -lah -s=modified -r'
