@@ -74,16 +74,35 @@ alias zpy="nvim ~/dotfiles/zsh_modules/zsh_python"
 # alias wp="docker-compose run --rm"
 # alias wp="docker-compose run --rm wpcli"
 
+# exa: -l подробный список, -a со скрытыми, -h строка заголовков колонок (не human-readable — размеры и так читаемые)
+# список со скрытыми, по дате изменения: самые свежие сверху
 alias lls='exa -lah -s=modified -r'
+# то же, но наоборот: самые старые сверху
+alias llsr='exa -lah -s=modified'
+# список со скрытыми + заголовки, сортировка по имени
 alias ll='exa -lah'
-alias lh='exa -la -s=size'
-alias lhr='exa -la -s=size -r'
-alias l='exa -lhF' 
-alias lt='exa -T -lah --level=2' 
-alias lta='exa -T -lah' 
-alias lt3='exa -T --level=3' 
-alias lt4='exa -T --level=4' 
-alias lt5='exa -T --level=5' 
+# то же, но по имени в обратном порядке (Z→A)
+alias llr='exa -lah -r'
+# список со скрытыми, по размеру: маленькие сверху, большие внизу
+alias llh='exa -la -s=size'
+# список со скрытыми, по размеру: большие сверху
+alias llhr='exa -la -s=size -r'
+# дерево на 2 уровня вглубь, с подробностями и скрытыми
+alias llt='exa -T -lah --level=2' 
+# то же, но внутри каждой папки обратный порядок (Z→A)
+alias lltr='exa -T -lah --level=2 -r'
+# дерево на всю глубину, с подробностями и скрытыми
+alias llta='exa -T -lah' 
+# то же, но внутри каждой папки обратный порядок (Z→A)
+alias lltar='exa -T -lah -r'
+# дерево на 3/4/5 уровней, только имена, без скрытых
+alias llt3='exa -T --level=3' 
+alias llt4='exa -T --level=4' 
+alias llt5='exa -T --level=5' 
+# то же, но внутри каждой папки обратный порядок (Z→A)
+alias llt3r='exa -T --level=3 -r'
+alias llt4r='exa -T --level=4 -r'
+alias llt5r='exa -T --level=5 -r'
 alias ex='exec ~/Documents/bash/bash-scripts/exit.sh'
 # alias mjml='./node_modules/.bin/mjml --watch index.mjml -o index.html'
 kill_server(){
