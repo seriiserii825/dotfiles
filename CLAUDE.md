@@ -37,8 +37,9 @@
    ```
    и `.config/i3/keyboard` уже содержит биндинг Chrome с переменной окружения:
    ```
-   bindsym $mod+g exec env GTK_USE_PORTAL=1 google-chrome-stable
+   bindsym $mod+g exec --no-startup-id ~/.config/i3/chrome-here.sh
    ```
+   (`GTK_USE_PORTAL=1` выставляется внутри `chrome-here.sh`; скрипт также переносит окно Chrome на воркспейс, с которого был запуск — иначе Chrome при восстановлении сессии открывается на запомненном рабочем столе через `_NET_WM_DESKTOP`, часто на другом мониторе).
    Если Chrome запускается иначе на новой машине (другой биндинг/автостарт) — добавить `GTK_USE_PORTAL=1` туда же.
 
 5. Перезапустить сервисы и reload i3:
