@@ -1,4 +1,4 @@
-alias lcsa="local-cli stop-all"
+alias lcfa="local-cli stop-all"
 alias lcsc="local-cli start-current"
 alias lcfc="local-cli stop-current"
 alias lcss="local-cli start-select"
