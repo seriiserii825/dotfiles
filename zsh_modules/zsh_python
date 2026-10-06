@@ -1,8 +1,8 @@
 dir_path="/home/serii/Documents/python/py-private"
-alias py-private="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias prv="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/python-scripts"
-alias pyscripts="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias pscr="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-pacman"
 alias pc="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
@@ -32,13 +32,13 @@ dir_path="/home/serii/Documents/python/py-vue"
 alias vue="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-bitbucket"
-alias py-bitbucket="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias pbt="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-files"
-alias py-files="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias pfl="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-dotfiles"
-alias py-dotfiles="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias pdf="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-wp"
 alias wb="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
