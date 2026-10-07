@@ -57,6 +57,7 @@ alias wbf="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --menu-files"
 alias wbfp="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --menu-page-theme-file"
 alias wpi="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --page-ignore"
 alias wrmp="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --rank-math-page"
+alias wul="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --use-from-list"
 
 dir_path="/home/serii/Documents/python/py-srt"
 alias srt-translate="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
