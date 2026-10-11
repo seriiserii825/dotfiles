@@ -15,7 +15,7 @@ exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
 # exec_always --no-startup-id lxpolkit
 exec --no-startup-id telegram-desktop
 #applets
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork --indicator --keylayout=1
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork --indicator --keylayout=1 --time-str= --date-str= --layout-color=ffffffff --layoutoutline-color=000000ff --layoutoutline-width=2 --layout-size=20 --modif-color=ffffffff --modifoutline-color=000000ff --modifieroutline-width=2 --modif-size=18
 exec --no-startup-id nm-applet
 exec blueman-mananger
 

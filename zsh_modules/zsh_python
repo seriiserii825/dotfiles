@@ -16,6 +16,9 @@ alias lf="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 dir_path="/home/serii/Documents/python/py-sync-settings"
 alias lfp="${dir_path}/.venv/bin/python3 ${dir_path}/main.py pull"
 
+dir_path="/home/serii/Documents/python/py-sync-settings"
+alias lfh="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --push"
+
 dir_path="/home/serii/Documents/python/py-clipboard"
 alias cl="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
