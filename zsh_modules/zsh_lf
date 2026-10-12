@@ -9,7 +9,3 @@ alias lfp="${dir_path}/.venv/bin/python3 ${dir_path}/main.py pull"
 
 dir_path="/home/serii/Documents/python/py-sync-settings"
 alias lf="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --push"
-
-dir_path="/home/serii/Documents/python/py-sync-settings"
-alias lfs="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --sync"
-
