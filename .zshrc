@@ -30,5 +30,9 @@ export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-echo 'export PATH="$(go env GOPATH)/bin:$PATH"' >> ~/.zshrc
-export PATH="$(go env GOPATH)/bin:$PATH"
+# go: добавляем $GOPATH/bin в PATH только если его там ещё нет
+if command -v go >/dev/null 2>&1; then
+  _gobin="$(go env GOPATH)/bin"
+  [[ ":$PATH:" != *":$_gobin:"* ]] && export PATH="$_gobin:$PATH"
+  unset _gobin
+fi
