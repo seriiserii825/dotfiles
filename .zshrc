@@ -1,5 +1,6 @@
 export PATH="$HOME/.local/bin:$PATH"
 source ~/dotfiles/zsh_modules/zsh_colors
+source ~/dotfiles/zsh_modules/zsh_lf
 source ~/dotfiles/zsh_modules/zsh_bash_scripts
 source ~/dotfiles/zsh_modules/zsh_nvm
 source ~/dotfiles/zsh_modules/zsh_default_editor
