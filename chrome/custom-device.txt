@@ -1,18 +1,18 @@
 [
   {
-    "title": "1920x1080",
+    "title": "360x640",
     "type": "unknown",
     "user-agent": "",
     "capabilities": [],
     "screen": {
       "device-pixel-ratio": 0,
       "vertical": {
-        "width": 1920,
-        "height": 1080
+        "width": 360,
+        "height": 640
       },
       "horizontal": {
-        "width": 1080,
-        "height": 1920
+        "width": 640,
+        "height": 360
       }
     },
     "modes": [
@@ -128,6 +128,70 @@
     }
   },
   {
+    "title": "414x896",
+    "type": "unknown",
+    "user-agent": "",
+    "capabilities": [],
+    "screen": {
+      "device-pixel-ratio": 0,
+      "vertical": {
+        "width": 414,
+        "height": 896
+      },
+      "horizontal": {
+        "width": 896,
+        "height": 414
+      }
+    },
+    "modes": [
+      {
+        "title": "",
+        "orientation": "vertical",
+        "insets": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        }
+      },
+      {
+        "title": "",
+        "orientation": "horizontal",
+        "insets": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        }
+      }
+    ],
+    "show-by-default": true,
+    "dual-screen": false,
+    "foldable-screen": false,
+    "show": "Default",
+    "user-agent-metadata": {
+      "brands": [
+        {
+          "brand": "",
+          "version": ""
+        }
+      ],
+      "fullVersionList": [
+        {
+          "brand": "",
+          "version": ""
+        }
+      ],
+      "fullVersion": "",
+      "platform": "",
+      "platformVersion": "",
+      "architecture": "",
+      "model": "",
+      "mobile": false,
+      "formFactors": []
+    }
+  },
+  {
     "title": "1920x900",
     "type": "unknown",
     "user-agent": "",
@@ -192,19 +256,19 @@
     }
   },
   {
-    "title": "3840x2160",
+    "title": "1920x1080",
     "type": "unknown",
     "user-agent": "",
     "capabilities": [],
     "screen": {
-      "device-pixel-ratio": 1,
+      "device-pixel-ratio": 0,
       "vertical": {
-        "width": 3840,
-        "height": 2160
+        "width": 1920,
+        "height": 1080
       },
       "horizontal": {
-        "width": 2160,
-        "height": 3840
+        "width": 1080,
+        "height": 1920
       }
     },
     "modes": [
@@ -269,6 +333,70 @@
       "horizontal": {
         "width": 1440,
         "height": 2560
+      }
+    },
+    "modes": [
+      {
+        "title": "",
+        "orientation": "vertical",
+        "insets": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        }
+      },
+      {
+        "title": "",
+        "orientation": "horizontal",
+        "insets": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        }
+      }
+    ],
+    "show-by-default": true,
+    "dual-screen": false,
+    "foldable-screen": false,
+    "show": "Default",
+    "user-agent-metadata": {
+      "brands": [
+        {
+          "brand": "",
+          "version": ""
+        }
+      ],
+      "fullVersionList": [
+        {
+          "brand": "",
+          "version": ""
+        }
+      ],
+      "fullVersion": "",
+      "platform": "",
+      "platformVersion": "",
+      "architecture": "",
+      "model": "",
+      "mobile": false,
+      "formFactors": []
+    }
+  },
+  {
+    "title": "3840x2160",
+    "type": "unknown",
+    "user-agent": "",
+    "capabilities": [],
+    "screen": {
+      "device-pixel-ratio": 1,
+      "vertical": {
+        "width": 3840,
+        "height": 2160
+      },
+      "horizontal": {
+        "width": 2160,
+        "height": 3840
       }
     },
     "modes": [
