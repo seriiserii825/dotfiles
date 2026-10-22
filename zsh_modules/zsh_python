@@ -1,5 +1,5 @@
-dir_path="/home/serii/Documents/python/py-private"
-alias prv="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+# dir_path="/home/serii/Documents/python/py-private"
+# alias prv="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/python-scripts"
 alias pscr="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
