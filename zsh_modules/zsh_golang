@@ -1,3 +1,4 @@
 alias pbt="go-bitbucket"
 alias scs="go-scss"
 alias prv="go-private"
+alias vue="go-vue"

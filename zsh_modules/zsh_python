@@ -22,8 +22,8 @@ alias lv="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 dir_path="/home/serii/Documents/python/py-arch"
 alias arch="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
-dir_path="/home/serii/Documents/python/py-vue"
-alias vue="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+# dir_path="/home/serii/Documents/python/py-vue"
+# alias vue="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 # dir_path="/home/serii/Documents/python/py-bitbucket"
 # alias pbt="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
