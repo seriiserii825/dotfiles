@@ -23,6 +23,7 @@ source ~/dotfiles/zsh_modules/zsh_find
 source ~/dotfiles/zsh_modules/zsh_zellij
 source ~/dotfiles/zsh_modules/zsh_local_cli
 source ~/dotfiles/zsh_modules/zsh_wp
+source ~/dotfiles/zsh_modules/zsh_golang
 
 . "$HOME/.atuin/bin/env"
 

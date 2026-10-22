@@ -7,8 +7,8 @@ alias pscr="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 dir_path="/home/serii/Documents/python/py-pacman"
 alias pc="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
-dir_path="/home/serii/Documents/python/py-scss"
-alias scs="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+# dir_path="/home/serii/Documents/python/py-scss"
+# alias scs="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-clipboard"
 alias cl="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
@@ -25,8 +25,8 @@ alias arch="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 dir_path="/home/serii/Documents/python/py-vue"
 alias vue="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
-dir_path="/home/serii/Documents/python/py-bitbucket"
-alias pbt="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+# dir_path="/home/serii/Documents/python/py-bitbucket"
+# alias pbt="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
 
 dir_path="/home/serii/Documents/python/py-files"
 alias pfl="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
