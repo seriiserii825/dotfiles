@@ -55,7 +55,13 @@ function jall() {
   if find . -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.jpeg' \) | grep -q .; then
     # backup originals before optimize
     mkdir -p original
-    find . -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.jpeg' \) -exec cp -np {} original/ \;
+    # photo.jpg -> original/photo-original.jpg
+    find . -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.jpeg' \) -exec sh -c '
+      for f; do
+        name="${f##*/}"
+        cp -np "$f" "original/${name%.*}-original.${name##*.}"
+      done
+    ' sh {} +
     find . -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.jpeg' \) -print0 \
       | xargs -0 jpegoptim --strip-all --all-progressive -pt -m "$quality"
   else
