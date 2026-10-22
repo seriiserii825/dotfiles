@@ -1,14 +1,20 @@
-dir_path="/home/serii/Documents/python/py-sync-settings"
-alias lfm="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+alias lfm="go-lf"
+alias lf="go-lf push"
+alias lft="go-lf push-tag"
+alias lfp="go-lf pull"
+alias lfs="go-lf sync"
 
-dir_path="/home/serii/Documents/python/py-sync-settings"
-alias lfs="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --sync"
-
-dir_path="/home/serii/Documents/python/py-sync-settings"
-alias lfp="${dir_path}/.venv/bin/python3 ${dir_path}/main.py pull"
-
-dir_path="/home/serii/Documents/python/py-sync-settings"
-alias lf="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --push"
-
-dir_path="/home/serii/Documents/python/py-sync-settings"
-alias lft="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --push-tag"
+# dir_path="/home/serii/Documents/python/py-sync-settings"
+# alias lfm="${dir_path}/.venv/bin/python3 ${dir_path}/main.py"
+#
+# dir_path="/home/serii/Documents/python/py-sync-settings"
+# alias lfs="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --sync"
+#
+# dir_path="/home/serii/Documents/python/py-sync-settings"
+# alias lfp="${dir_path}/.venv/bin/python3 ${dir_path}/main.py pull"
+#
+# dir_path="/home/serii/Documents/python/py-sync-settings"
+# alias lf="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --push"
+#
+# dir_path="/home/serii/Documents/python/py-sync-settings"
+# alias lft="${dir_path}/.venv/bin/python3 ${dir_path}/main.py --push-tag"
