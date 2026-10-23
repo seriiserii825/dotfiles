@@ -4,5 +4,14 @@
   "singleQuote": false,
   "semi": true,
   "vueIndentScriptAndStyle": true,
-  "printWidth": 100
+  "printWidth": 100,
+  "overrides": [
+    {
+      "files": "*.md",
+      "options": {
+        "proseWrap": "always",
+        "printWidth": 120
+      }
+    }
+  ]
 }
