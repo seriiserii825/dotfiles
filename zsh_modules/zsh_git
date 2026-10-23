@@ -2,8 +2,9 @@ alias gs="git status"
 alias gcp="git config pull.rebase false && git pull"
 alias gth="xdg-open 'https://github.com/seriiserii825?tab=repositories'"
 alias lz="lazygit"
-alias glog="git log --oneline --graph --decorate --all"
-alias gle='git log --format="%ae" | sort -u'
+alias glog="git log --oneline --graph --decorate --all" # color 
+alias glog_emails='git log --format="%ae" | sort -u' # used emails
+alias glog_reverse_commits='git log --reverse --pretty=format:"%h %an %ad %s" --date=short' # reverse commits
 
 function gcmt() {
   git add .

@@ -20,5 +20,6 @@
   },
   "agentPushNotifEnabled": true,
   "skipAutoPermissionPrompt": true,
-  "voiceEnabled": true
+  "voiceEnabled": true,
+  "switchModelsOnFlag": false
 }
