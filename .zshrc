@@ -39,5 +39,6 @@ source ~/Documents/global-aliases/zsh_golang
 source ~/Documents/global-aliases/zsh_lf
 source ~/Documents/global-aliases/zsh_local_cli
 source ~/Documents/global-aliases/zsh_node
+source ~/Documents/global-aliases/zsh_parser
 source ~/Documents/global-aliases/zsh_python
 source ~/Documents/global-aliases/zsh_wp
