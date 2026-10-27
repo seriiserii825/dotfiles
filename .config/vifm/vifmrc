@@ -59,8 +59,8 @@ command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
 command! reload :write | restart full
 command! sl :select {%a}
-command! sxd sxiv -tr %d
-command! sx sxiv %c
+command! sxd nsxiv -tr %d
+command! sx nsxiv %c
 command! dd :rm -rf %f
 filextype {*.pdf},<application/pdf> zathura %c %i, apvlv %c, xpdf %c
 fileviewer {*.pdf},<application/pdf> pdftotext -nopgbrk %c -
@@ -139,8 +139,8 @@ filextype {*.sh3d}
         \ {Open in Sweet Home 3D}
         \ sweethome3d %c:p,
 filextype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
-        \ {View in sxiv}
-        \ sxiv %f,
+        \ {View in nsxiv}
+        \ nsxiv %f,
         \ {View in gpicview}
         \ gpicview %c,
         \ {View in shotwell}
@@ -404,8 +404,8 @@ filextype {*.svg},
         \ google-chrome-stable %f,
         \ {View in nvim}
         \ nvim %f,
-        \ {View in sxiv}
-        \ sxiv %f,
+        \ {View in nsxiv}
+        \ nsxiv %f,
 
 " Djvu
 filextype {*.djvu},<image/vnd.djvu>
@@ -462,8 +462,8 @@ fileviewer {*.[1-8]},<text/troff> man ./%c | col -b
 
 " Images
 filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.ico
-        \ {View in sxiv}
-        \ sxiv -ia %f &,
+        \ {View in nsxiv}
+        \ nsxiv -ia %f &,
         \ {View in imv}
         \ imv -b 1D2330 -d %d &,
         \ {View in feh}
