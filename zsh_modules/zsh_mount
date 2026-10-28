@@ -4,7 +4,15 @@ function mnt() {
   TARGET_UUID="bd51a002-3aea-4574-99c0-a98a67753b37"
   MOUNT_POINT="/mnt"
 
-  device=$(sudo blkid -o device -t UUID="$TARGET_UUID")
+  if findmnt -M "$MOUNT_POINT" >/dev/null; then
+    echo "Already mounted: $(findmnt -M "$MOUNT_POINT" -n -o SOURCE | tail -1)"
+    cd "$MOUNT_POINT"
+    return
+  fi
+
+  # udev symlink resolves instantly, unlike blkid which probes every disk
+  device=$(readlink -f "/dev/disk/by-uuid/$TARGET_UUID" 2>/dev/null)
+  [ -b "$device" ] || device=""
 
   if [ -n "$device" ]; then
     echo "✅ Found target device: $device"
