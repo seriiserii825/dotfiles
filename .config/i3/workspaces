@@ -27,7 +27,6 @@ for_window [class="jetbrains-phpstorm"] focus
 for_window [class="firefox"] focus
 # "Navigator", "firefw wx"
 for_window [class="Local" instance="local"] focus
-for_window [class="TelegramDesktop" instance="Telegram"] focus
 for_window [class="Gimp" instance="gimp"] focus
 # for_window [class="Google-chrome" instance="google-chrome"] focus  # уводил фокус на 2 монитор, см. chrome-here.sh
 for_window [title="Gpick"] floating enable, resize set 800px 500px

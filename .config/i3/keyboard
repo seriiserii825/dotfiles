@@ -39,7 +39,7 @@ bindsym $mod+Ctrl+2 resize shrink width 20 px or 20 ppt
 # bindsym $mod+Shift+q [workspace=.*] kill
 bindsym $mod+Shift+q exec ~/Documents/bash/bash-scripts/i3-close-windows.sh
 bindsym $mod+g exec --no-startup-id ~/.config/i3/chrome-here.sh
-bindsym $mod+t exec Telegram
+bindsym $mod+t exec Telegram, workspace 7
 # bindsym $mod+w exec local-by-flywheel
 bindsym $mod+w exec --no-startup-id wmctrl -x -a local.Local || /opt/Local/Local || /opt/Local/local
 bindsym $mod+shift+y exec env QT_QPA_PLATFORMTHEME=xdgdesktopportal flameshot gui
