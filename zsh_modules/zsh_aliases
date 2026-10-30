@@ -75,6 +75,7 @@ alias i3conf="nvim ~/.config/i3/config"
 alias pacman_to_file='pacman -Qent > pkglist.txt'
 
 alias gL='cd "/home/serii/Local Sites"'
+alias gS='cd "/home/serii/Sites"'
 alias gc='cd ~/.config'
 alias dg='sudo dpkg -i'
 # alias shn="sudo shutdown -h now"
