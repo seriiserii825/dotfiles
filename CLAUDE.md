@@ -2,6 +2,8 @@
 
 Личные конфиги, симлинкаются вручную из `~/dotfiles/.config/<app>` в `~/.config/<app>` (см. существующие симлинки как образец — не GNU stow, просто `ln -s`).
 
+Линковку делает `dotfiles` (репо `~/Documents/go/go-dotfiles`, ставится через `go install .`): файлы из корня `~/dotfiles` → `~`, папки из `.config` → `~/.config`, пропуская имена из `.dotignore`; `dotfiles -r` удаляет симлинки. Старый `py-dotfiles` (алиас `pdf`) больше не используется.
+
 `packages/pacman.txt` — пакеты из официальных репозиториев, `packages/eiwi.txt` — пакеты из AUR (ставятся через `yay`).
 
 ## Задачи для Claude Code на новой машине
@@ -122,15 +124,15 @@ resetCherryPick: "<c-s-r>"
 
 ### gitconfig-from-dotfiles — `~/.gitconfig` из dotfiles и `core.symlinks = true`
 
-Раньше `~/.gitconfig` был симлинком на `~/xubuntu/.gitconfig` (там `core.symlinks = false`), а `.gitconfig` стоял в `.dotignore`, поэтому py-dotfiles его не линковал. Теперь `.gitconfig` убран из `.dotignore`, источник — `~/dotfiles/.gitconfig` (`core.symlinks = true`, без устаревших `safe.directory`).
+Раньше `~/.gitconfig` был симлинком на `~/xubuntu/.gitconfig` (там `core.symlinks = false`), а `.gitconfig` стоял в `.dotignore`, поэтому линковщик (тогда py-dotfiles, теперь go-dotfiles) его не линковал. Теперь `.gitconfig` убран из `.dotignore`, источник — `~/dotfiles/.gitconfig` (`core.symlinks = true`, без устаревших `safe.directory`).
 
 Почему важно: с `core.symlinks = false` git при clone/checkout создаёт вместо симлинков обычные текстовые файлы с путём внутри. В этом репо так ломается `.claude/settings.json` (в git — симлинк на `apps/claude/settings.json`): в `git status` висит `T`. Такой файл нельзя коммитить — симлинк сломается на всех машинах.
 
 Шаги на другой машине (после `git pull`):
 
-1. Перелинковать — py-dotfiles заменяет существующий симлинк сам:
+1. Перелинковать — go-dotfiles заменяет существующий симлинк сам:
    ```
-   pdf    # алиас: ~/Documents/python/py-dotfiles/.venv/bin/python3 ~/Documents/python/py-dotfiles/main.py
+   dotfiles    # бинарник go-dotfiles: cd ~/Documents/go/go-dotfiles && go install . (ставится в ~/go/bin/dotfiles)
    ```
    или вручную: `ln -sfn ~/dotfiles/.gitconfig ~/.gitconfig`.
 2. Проверить: `readlink ~/.gitconfig` → `/home/serii/dotfiles/.gitconfig`, `git config --global core.symlinks` → `true`.
