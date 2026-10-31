@@ -119,3 +119,24 @@ Unrecognized key '<c-R>' for keybinding 'Commits.ResetCherryPick[0]'
 resetCherryPick: "<c-s-r>"
 ```
 Если на другой машине (например, рабочей) стоит lazygit, который тоже начал ругаться на `<c-R>` — накатить тот же фикс: `<c-s-r>` вместо `<c-R>`.
+
+### gitconfig-from-dotfiles — `~/.gitconfig` из dotfiles и `core.symlinks = true`
+
+Раньше `~/.gitconfig` был симлинком на `~/xubuntu/.gitconfig` (там `core.symlinks = false`), а `.gitconfig` стоял в `.dotignore`, поэтому py-dotfiles его не линковал. Теперь `.gitconfig` убран из `.dotignore`, источник — `~/dotfiles/.gitconfig` (`core.symlinks = true`, без устаревших `safe.directory`).
+
+Почему важно: с `core.symlinks = false` git при clone/checkout создаёт вместо симлинков обычные текстовые файлы с путём внутри. В этом репо так ломается `.claude/settings.json` (в git — симлинк на `apps/claude/settings.json`): в `git status` висит `T`. Такой файл нельзя коммитить — симлинк сломается на всех машинах.
+
+Шаги на другой машине (после `git pull`):
+
+1. Перелинковать — py-dotfiles заменяет существующий симлинк сам:
+   ```
+   pdf    # алиас: ~/Documents/python/py-dotfiles/.venv/bin/python3 ~/Documents/python/py-dotfiles/main.py
+   ```
+   или вручную: `ln -sfn ~/dotfiles/.gitconfig ~/.gitconfig`.
+2. Проверить: `readlink ~/.gitconfig` → `/home/serii/dotfiles/.gitconfig`, `git config --global core.symlinks` → `true`.
+3. Если в `git status` dotfiles есть `T .claude/settings.json` — восстановить настоящий симлинк (уже при `symlinks = true`):
+   ```
+   cd ~/dotfiles && git checkout -- .claude/settings.json
+   ls -la .claude/settings.json   # должно быть: -> /home/serii/dotfiles/apps/claude/settings.json
+   ```
+4. Если в других репозиториях на этой машине тоже висит `T` у симлинков — то же самое: `git checkout -- <файл>`.
