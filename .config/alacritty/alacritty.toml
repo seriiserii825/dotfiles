@@ -71,7 +71,7 @@ mods = "Control|Shift"
 action = "ScrollHalfPageDown"
 
 [selection]
-save_to_clipboard = false
+save_to_clipboard = true
 
 [[keyboard.bindings]]
 key = "Return"
