@@ -6,7 +6,6 @@ gimp
 phpstorm
 rofi-collection
 .eslintrc.json
-.p10k.zsh
 .vimrc
 dunstrc
 smplayer.keys

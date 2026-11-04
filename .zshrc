@@ -30,8 +30,13 @@ if command -v go >/dev/null 2>&1; then
   unset _gobin
 fi
 
+
+# powerlevel10k
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
 # global-aliases
 source ~/Documents/global-aliases/zsh_golang
+source ~/Documents/global-aliases/zsh_go_local
 source ~/Documents/global-aliases/zsh_lf
 source ~/Documents/global-aliases/zsh_local_cli
 source ~/Documents/global-aliases/zsh_node

@@ -1,6 +1,7 @@
 export ZSH="/home/serii/.oh-my-zsh"
 # ZSH_THEME="mira"
-ZSH_THEME="amuse"
+# ZSH_THEME="amuse"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Add custom completions (must be before compinit)
 fpath+=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
