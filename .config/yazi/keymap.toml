@@ -497,6 +497,16 @@ run = "plugin path-from-root"
 desc = "Copies path from git root"
 
 [[mgr.prepend_keymap]]
+on = ["c", "g"]
+run = "plugin copy-git-link"
+desc = "Copy git web link to share"
+
+[[mgr.prepend_keymap]]
+on = ["c", "G"]
+run = "plugin copy-git-link repo"
+desc = "Copy git repo root web link"
+
+[[mgr.prepend_keymap]]
 on = ["b", "o"]
 run = 'shell --confirm "google-chrome-stable \"$@\""'
 desc = "Open selected file in Chrome"

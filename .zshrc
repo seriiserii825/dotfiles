@@ -35,6 +35,7 @@ fi
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 # global-aliases
+source ~/Documents/global-aliases/zsh_files
 source ~/Documents/global-aliases/zsh_golang
 source ~/Documents/global-aliases/zsh_go_local
 source ~/Documents/global-aliases/zsh_lf
