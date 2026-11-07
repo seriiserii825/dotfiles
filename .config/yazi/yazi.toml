@@ -54,6 +54,9 @@ play = [
 listen = [
 	{ run = "audacious %s", desc = "Play in Audacious", for = "unix", orphan = true },
 ]
+view = [
+	{ run = "~/.config/yazi/nsxiv-dir.sh %s", desc = "nsxiv", for = "unix", orphan = true },
+]
 
 [open]
 rules = [
@@ -63,7 +66,7 @@ rules = [
 	{ mime = "text/*", use = ["edit", "reveal"] },
 	# Image
 	{ mime = "image/svg+xml", use = ["edit", "reveal"] },
-	{ mime = "image/*", use = ["open", "reveal"] },
+	{ mime = "image/*", use = ["view", "open", "reveal"] },
 	# Media
 	{ mime = "audio/*", use = ["listen", "reveal"] },
 	{ mime = "video/*", use = ["play", "reveal"] },
