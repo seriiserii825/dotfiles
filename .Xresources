@@ -1,0 +1,5 @@
+! nsxiv: dark background around images smaller than the window
+Nsxiv.window.background: #1e1e1e
+Nsxiv.window.foreground: #d4d4d4
+Nsxiv.bar.background: #1e1e1e
+Nsxiv.bar.foreground: #d4d4d4
