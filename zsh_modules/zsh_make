@@ -1,0 +1,2 @@
+alias makeup="make env-up"
+alias makedown="make env-down"
