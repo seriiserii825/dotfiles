@@ -11,6 +11,4 @@ export PATH=~/Documents/bash:$PATH
 
 # change node vesion when run yarn or bun
 source ~/Documents/bash/bash-scripts/n.sh
-# docker
-source ~/dotfiles/scripts/docker.sh
 
