@@ -20,6 +20,7 @@ assign [class="Local" instance="local"] 6
 assign [class="TelegramDesktop" instance="Telegram"] 7
 assign [class="Audacious" instance="audacious"] 9
 assign [class="Gimp" instance="gimp"] 10
+assign [class="org.mozilla.Thunderbird"] 10
 # assign [class="qBittorrent"] 10
 
 for_window [class="teams-for-linux" instance="teams-for-linux"] focus
