@@ -1,7 +1,25 @@
 alias umnt='sudo umount /mnt'
 
+# Short SMART health report: smart sdb
+function smart() {
+  local disk=${1#/dev/}
+  [ -n "$disk" ] || { echo "usage: smart <disk>  (e.g. smart sdb)"; return 1; }
+  # USB enclosures hide SMART behind a USB-SATA bridge; -d sat passes commands through
+  local opts=()
+  [ "$(lsblk -dno TRAN "/dev/$disk")" = "usb" ] && opts=(-d sat)
+  sudo smartctl -a $opts "/dev/$disk" |
+    grep -iE "overall-health|Device Model|Power_On_Hours|Reallocated|Pending|Uncorrectable|CRC_Error|Spin_Retry|Start_Stop|G-Sense|Load_Cycle|Seek_Error|Raw_Read|ATA Error Count|Power_Cycle" |
+    grep -v "Selective self-test"  # "pending on power-up" line matches Pending but is noise
+}
+
+# mnt     — mount the target disk (by UUID), otherwise pick from a menu
+# mnt -m  — always show the menu (mount a partition or check SMART of a disk)
 function mnt() {
-  TARGET_UUID="bd51a002-3aea-4574-99c0-a98a67753b37"
+  # known disks, tried in order; the first one connected gets mounted
+  local TARGET_UUIDS=(
+    bd51a002-3aea-4574-99c0-a98a67753b37 # original target disk
+    c85f2e47-c318-4722-9707-656b339bfbe7 # HGST HTS721010A9E630 1TB, ext4, label "hgst" (Tracer USB-C case)
+  )
   MOUNT_POINT="/mnt"
 
   if findmnt -M "$MOUNT_POINT" >/dev/null; then
@@ -10,21 +28,37 @@ function mnt() {
     return
   fi
 
-  # udev symlink resolves instantly, unlike blkid which probes every disk
-  device=$(readlink -f "/dev/disk/by-uuid/$TARGET_UUID" 2>/dev/null)
-  [ -b "$device" ] || device=""
-
-  if [ -n "$device" ]; then
-    echo "✅ Found target device: $device"
-    sudo mount "$device" "$MOUNT_POINT" && cd "$MOUNT_POINT"
-  else
-    echo "⚠️ Target device not found. Choose manually."
-    lsblk
-    devices=$(lsblk -ln -o NAME,TYPE | awk '$2=="part"{print $1}')
-    select dev in $devices; do
-      sudo mount /dev/$dev "$MOUNT_POINT" && cd "$MOUNT_POINT"
-      echo "Mounted to $MOUNT_POINT"
-      break
+  if [ "$1" != "-m" ]; then
+    # udev symlink resolves instantly, unlike blkid which probes every disk
+    local uuid device
+    for uuid in $TARGET_UUIDS; do
+      device=$(readlink -f "/dev/disk/by-uuid/$uuid" 2>/dev/null)
+      if [ -b "$device" ]; then
+        echo "✅ Found target device: $device ($(lsblk -no LABEL "$device"))"
+        sudo mount "$device" "$MOUNT_POINT" && cd "$MOUNT_POINT"
+        return
+      fi
     done
+    echo "⚠️ Target device not found. Choose manually."
   fi
+
+  # -P gives KEY="value" pairs so empty fields don't shift columns
+  local choice action name
+  choice=$( {
+    # unmounted partitions
+    lsblk -nP -o NAME,TYPE,SIZE,FSTYPE,LABEL,MOUNTPOINT |
+      awk -F'"' '$4=="part" && $12==""{printf "mount  %-12s %8s  %-6s %s\n", $2, $6, $8, $10}'
+    # physical disks (skip zram, optical)
+    lsblk -dnP -o NAME,TYPE,SIZE,TRAN,MODEL |
+      awk -F'"' '$4=="disk" && $8!=""{printf "smart  %-12s %8s  %-6s %s\n", $2, $6, $8, $10}'
+  } | fzf --height=~50% --reverse --prompt="mnt > " \
+        --header="ACTION NAME           SIZE  FS/BUS LABEL/MODEL")
+  [ -n "$choice" ] || return 1
+  action=${choice%% *}
+  name=$(awk '{print $2}' <<<"$choice")
+
+  case $action in
+    mount) sudo mount "/dev/$name" "$MOUNT_POINT" && cd "$MOUNT_POINT" && echo "Mounted /dev/$name to $MOUNT_POINT" ;;
+    smart) smart "$name" ;;
+  esac
 }
