@@ -9,3 +9,6 @@
 
 apps/filezilla
 apps/filezilla.sha256
+
+# Claude Code: скиллы, которые синхронизируются с claude.ai (кеш, скачивается заново)
+apps/claude/skills/synced/
