@@ -12,8 +12,23 @@ alias jpegtojpg="rnst * && rename -v s/jpeg/jpg/g *"
 alias g="gulp"
 alias rconf="nvim ~/.config/ranger/rc.conf"
 alias sns="sudo systemctl stop nginx"
-alias jpg_downloads="cp *.jpg ~/Downloads && echo 'Copied all JPG files to Downloads'"
-alias jpg_rm_downloads="rm ~/Downloads/*.jpg && echo 'Removed all JPG files from Downloads'"
+function jpg_downloads() {
+  local files=( *.jpg(N) )
+  (( ${#files} )) || { echo "No JPG files in $PWD"; return 1; }
+  local f
+  for f in $files; do
+    command cp -- $f ~/Downloads/ && echo "$f -> Downloads"
+  done
+}
+
+function jpg_rm_downloads() {
+  local files=( ~/Downloads/*.jpg(N) )
+  (( ${#files} )) || { echo "No JPG files in ~/Downloads"; return 1; }
+  local f
+  for f in $files; do
+    command rm -- $f && echo "rm ${f:t} from Downloads"
+  done
+}
 alias search_emojji="google-chrome-stable https://search-emoji-pi.vercel.app/ru#Symbols &"
 # alias phpchecker='php /home/serii/Documents/php/PHP_CodeSniffer/bin/phpcs'
 alias check_php='find . -name "*.php" -exec php -l {} \; 2>&1 | grep -v "No syntax errors detected"'
