@@ -12,6 +12,7 @@ alias jpegtojpg="rnst * && rename -v s/jpeg/jpg/g *"
 alias g="gulp"
 alias rconf="nvim ~/.config/ranger/rc.conf"
 alias sns="sudo systemctl stop nginx"
+alias jpg_downloads="cp *.jpg ~/Downloads && echo 'Copied all JPG files to Downloads'"
 alias search_emojji="google-chrome-stable https://search-emoji-pi.vercel.app/ru#Symbols &"
 # alias phpchecker='php /home/serii/Documents/php/PHP_CodeSniffer/bin/phpcs'
 alias check_php='find . -name "*.php" -exec php -l {} \; 2>&1 | grep -v "No syntax errors detected"'
