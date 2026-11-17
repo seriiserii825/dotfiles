@@ -12,3 +12,6 @@ apps/filezilla.sha256
 
 # Claude Code: скиллы, которые синхронизируются с claude.ai (кеш, скачивается заново)
 apps/claude/skills/synced/
+
+.config/aerc/accounts.conf
+.config/aerc/accounts.conf.sha256
