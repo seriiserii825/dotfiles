@@ -84,7 +84,6 @@ neovim
 networkmanager
 network-manager-applet
 ninja
-nitrogen
 noto-fonts-emoji
 ntfs-3g
 okularpart5

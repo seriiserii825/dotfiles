@@ -2,7 +2,7 @@
 exec_always --no-startup-id xrdb -merge ~/.Xresources
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec nitrogen --restore
+exec --no-startup-id ~/.config/feh/fehbg
 exec_always --no-startup-id /usr/bin/copyq;
 exec_always --no-startup-id /usr/bin/teams-for-linux;
 # exec --no-startup-id /opt/Local/local

@@ -1,0 +1,6 @@
+#!/bin/sh
+# Wallpaper for i3, started from .config/i3/autostart.
+# To change the wallpaper, edit WALLPAPER and run this script again.
+WALLPAPER="$HOME/Picture/wallpapers/linux-cheatsheet-examples.jpg"
+
+exec feh --no-fehbg --bg-max --image-bg black "$WALLPAPER"
