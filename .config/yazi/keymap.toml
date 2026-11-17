@@ -526,3 +526,8 @@ desc = "Copy contents of file"
 on = ["c", "s"]
 run = "plugin rename-copy"
 desc = "Rename, copy new name to clipboard, restore original"
+
+[[mgr.prepend_keymap]]
+on = ["m", "s"]
+run = "plugin multiselect"
+desc = "Select files by list: 58,47,40-45,foo"
