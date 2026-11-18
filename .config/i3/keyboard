@@ -2,7 +2,7 @@
 exec_always setxkbmap -option grp:caps_toggle "us,ru" -option grp:led_caps
 bindsym $mod+Shift+i exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh
 bindsym $mod+Shift+p exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh php
-bindsym $mod+Shift+n exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh python
+bindsym $mod++n exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh python
 bindsym $mod+Shift+t exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh typescript
 bindsym $mod+Shift+v exec --no-startup-id ~/Documents/bash/bash-scripts/insert_codeblock.sh vue
 bindsym $mod+Shift+m [class="mpv"] floating toggle, sticky toggle, resize set 300 200, move position 10 800
@@ -41,7 +41,7 @@ bindsym $mod+Ctrl+2 resize shrink width 20 px or 20 ppt
 bindsym $mod+Shift+q exec ~/Documents/bash/bash-scripts/i3-close-windows.sh
 bindsym $mod+g exec --no-startup-id ~/.config/i3/chrome-here.sh
 bindsym $mod+t exec Telegram, workspace 7
-bindsym $mod+i exec --no-startup-id pgrep -x thunderbird >/dev/null || thunderbird, workspace 10
+bindsym $mod+i exec --no-startup-id pgrep -x aerc >/dev/null && i3-msg -q '[title="^aerc$"] focus' || alacritty -T aerc -e aerc, workspace 10
 # bindsym $mod+w exec local-by-flywheel
 bindsym $mod+w exec --no-startup-id wmctrl -x -a local.Local || /opt/Local/Local || /opt/Local/local
 bindsym $mod+shift+y exec env QT_QPA_PLATFORMTHEME=xdgdesktopportal flameshot gui
