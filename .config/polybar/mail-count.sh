@@ -6,7 +6,7 @@
 #
 #   mail-count.sh          # print widget text
 #   mail-count.sh check    # ask mailnag to check mail now
-#   mail-count.sh click    # start mailnag if it is down, otherwise open thunderbird
+#   mail-count.sh click    # start mailnag if it is down, otherwise focus/open aerc
 
 SERVICE=(mailnag.MailnagService /mailnag/MailnagService mailnag.MailnagService)
 
@@ -19,7 +19,11 @@ case "${1:-}" in
     ;;
   click)
     if busctl --user call "${SERVICE[@]}" GetMailCount >/dev/null 2>&1; then
-      i3-msg -q 'exec --no-startup-id pgrep -x thunderbird >/dev/null || thunderbird, workspace 10'
+      if pgrep -x aerc >/dev/null; then
+        i3-msg -q '[title="^aerc$"] focus'
+      else
+        i3-msg -q 'exec --no-startup-id alacritty -T aerc -e aerc'
+      fi
     else
       pkill -x mailnag
       i3-msg -q 'exec --no-startup-id mailnag'
