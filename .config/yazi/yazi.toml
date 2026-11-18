@@ -36,6 +36,9 @@ open = [
 	{ run = 'start "" %s1', desc = "Open", for = "windows", orphan = true },
 	{ run = "termux-open %s1", desc = "Open", for = "android" },
 ]
+pdf = [
+	{ run = 'zathura %s', desc = "zathura", orphan = true, for = "linux" },
+]
 reveal = [
 	{ run = "xdg-open %d1", desc = "Reveal", for = "linux" },
 	{ run = "open -R %s1", desc = "Reveal", for = "macos" },
@@ -70,6 +73,8 @@ rules = [
 	# Media
 	{ mime = "audio/*", use = ["listen", "reveal"] },
 	{ mime = "video/*", use = ["play", "reveal"] },
+	# PDF
+	{ mime = "application/pdf", use = ["pdf", "open", "reveal"] },
 	# Archive
 	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", use = ["extract", "reveal"] },
 	# JSON
