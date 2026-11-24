@@ -509,7 +509,7 @@ desc = "Copy git repo root web link"
 
 [[mgr.prepend_keymap]]
 on = ["b", "o"]
-run = 'shell --confirm "google-chrome-stable \"$@\""'
+run = 'shell --orphan --confirm "google-chrome-stable %s"'
 desc = "Open selected file in Chrome"
 
 [[mgr.prepend_keymap]]
