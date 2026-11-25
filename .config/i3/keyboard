@@ -36,7 +36,7 @@ bindsym $mod+Shift+Right move right 50 px
 
 # bindsym $mod+Return exec ghostty
 # bindsym $mod+Return exec /usr/bin/warp-terminal
-bindsym $mod+Ctrl+2 resize shrink width 20 px or 20 ppt
+bindsym $mod+Ctrl+2 resize shrink width 10 px or 10 ppt
 # bindsym $mod+Shift+q [workspace=.*] kill
 bindsym $mod+Shift+q exec ~/Documents/bash/bash-scripts/i3-close-windows.sh
 bindsym $mod+g exec --no-startup-id ~/.config/i3/chrome-here.sh
